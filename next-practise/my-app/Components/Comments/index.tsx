@@ -6,23 +6,28 @@ import Comment from "./Comment";
 //     {
 //         id: 1,
 //         text: 'hi',
+//         like: 0,
 //         replies: [{
 //             id: 2,
 //             text: 'ayush',
+//             like: 0,
 //             replies: [{
 //                 id: 3,
 //                 text: 'tibra',
+//                 like: 0,
 //                 replies: []
 //             }]
 //         }, {
 //             id: 5,
 //             text: 'newAyush',
+//             like: 0,
 //             replies: []
 //         }],
 //     }, 
 //     {
 //         id: 4,
 //         text: 'bye',
+//         like: 0,
 //         replies: []
 //     }
 // ]
@@ -40,6 +45,7 @@ const Comments = () => {
         setComments((prev) => [...prev, {
             id: Date.now(),
             text: inputValue,
+            like: 0,
             replies: [] // always initialize
         }])
         setInputValue('');
@@ -56,6 +62,7 @@ const Comments = () => {
                             {
                                 id: Date.now(),
                                 text: replyText,
+                                like: 0,
                                 replies: []
                             }
                         ]
@@ -104,6 +111,25 @@ const Comments = () => {
         setComments(prev => updateTree(prev));
     }
 
+    const addLike = (commentID) => {
+        const updateTree = (comments) => {
+            return comments.map(comment => {
+                if(comment.id == commentID){
+                    return {
+                        ...comment,
+                        like: comment.like + 1
+                    }
+                }
+
+                return {
+                    ...comment,
+                    replies: updateTree(comment.replies)
+                }
+            })
+        }
+        setComments(prev => updateTree(prev))
+    }
+
     console.log(comments)
 
     return (
@@ -123,6 +149,7 @@ const Comments = () => {
                                 comment={comment}
                                 addReply={addReply}
                                 editReply={editReply}
+                                addLike={addLike}
                                 deleteComment={deleteComment}
                             />
                         ))}
