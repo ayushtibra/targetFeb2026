@@ -1,6 +1,6 @@
 import React from "react";
 
-const Comment = ({ comment, addReply,editReply,deleteComment }) => {
+const Comment = ({ comment, addReply, addLike, editReply, deleteComment }) => {
   const [showReply, setShowReply] = React.useState(false);
   const [showEdit, setShowEdit] = React.useState(false);
   const [text, setText] = React.useState("");
@@ -8,6 +8,10 @@ const Comment = ({ comment, addReply,editReply,deleteComment }) => {
   return (
     <div style={{ marginLeft: "20px", borderLeft: "1px solid #ccc" }}>
       <p>{comment.text}</p>
+
+      <button className="pr-2" onClick={() => addLike(comment.id)}>
+        Like {comment.like}
+      </button>
 
       <button className="pr-2" onClick={() => setShowReply(!showReply)}>
         Reply
@@ -66,6 +70,7 @@ const Comment = ({ comment, addReply,editReply,deleteComment }) => {
           comment={reply}
           addReply={addReply}
           editReply={editReply}
+          addLike={addLike}
           deleteComment={deleteComment}
         />
       ))}
