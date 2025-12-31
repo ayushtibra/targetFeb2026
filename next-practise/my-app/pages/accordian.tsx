@@ -10,6 +10,10 @@ const items = [{
 },{
     title: 'what is hobby of ayush',
     content: 'Chess and badminton'
+}, 
+{
+    title: 'what is hobby of ayush',
+    content: 'Chess and badminton'
 }]
 
 const Accordian = () => {
