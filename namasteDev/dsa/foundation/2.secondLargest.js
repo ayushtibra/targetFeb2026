@@ -6,8 +6,8 @@ var secondHighest = function(s) {
 
     for(let i=0;i<arr.length;i++){
         if(arr[i] > largest){
-            secondLargest = largest; // -1
-            largest = arr[i]; // 8
+            secondLargest = largest; 
+            largest = arr[i]; 
         } else if(arr[i] > secondLargest && arr[i] < largest){
             secondLargest = arr[i]
         }
