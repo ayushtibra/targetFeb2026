@@ -1,0 +1,112 @@
+Before jumping into System design
+- Ask for features and how user will use the system, Once you get the idea, now start listing down 
+
+Steps
+1. Requirements
+2.  Core Entities
+3. API
+4. High level design
+5. Deep Dive
+
+1. Requirements
+    1. Functional requirements - consist of all main/top level features
+    2. Non-functional requirements - scaliblity, availilbity, reliability and tolerance. (all these are needed in every system 
+                                    to be say). So, instead of writing this answer, think about
+                                    - CAP theoram - C for data integrity means each user receive the most recent write or an error
+                                                  - A for continuous responsiveness means Every request receives a response, even if it's not the most up-to-date data
+                                                Ex: - A banking system where ensuring the account balance is accurate (C) is more critical than allowing a transaction (A) if the network is down
+                                                     - A social media newsfeed where users expect to see posts (A) immediately, even if a new comment hasn't propagated to all servers yet (P)
+    
+                                                    Instead of choosing one of them, things can co-exist in different part of the system.
+
+2. Core Entities
+    What data needs to be persisted in the system and then exchanged by the APIs.
+
+3. API ( user facing api - client is making to get the functional requirements or to access features) - LOOK AT FUNCTIONAL REQUIREMENTS
+
+4. HIGH level DESIGN - this will caters your features/functional requirements
+    if you are not able to decide which architecture to use - use microservices
+    not necessary to argue on sql or nosql db to which to choose, use whichever you are comfortable as its an old debate and now sql can do what nosql do and vice versa
+    CRON Job - it will check for the reserverdTimeStamp and if some ticket has 10 minute passed, it made it available
+    But we are not using cron job here because there will be a 10 min gap issue in CRON, so we are using 
+    Ticket Lock (REDIS) - attach a TTL to ticket and whenever seat map fetched, we fetched all seat and filter out the one present
+    in Ticket Lost.
+
+5. DEEP Dive - this will be more onto your non-functional requ
+
+
+----------------------------------------------------------------------------------------------------------
+                                                    
+                                    
+Ex- Ticketing System
+
+Functional requirements
+    1. View an event
+    2. Book an event
+    3. Search en event
+
+Non-functional requirements
+    1. Strong consistency in booking ticket and high availilbity in searching/viewing an event.
+    2. Read >> write ratio ( 100: 1 maybe)
+    3. Scalability to handle surges from popular events
+    4. etc ( don't lose data, secruity, maintaince, compliance, accessibility) - out of scope
+    5. low latency search
+
+POST THIS TELL INTERVIEWER, THIS I'LL PRIORITISE AND THESE ARE OUT OF SCOPE, IS IT OKAY WITH YOU.
+
+
+Core Entities
+    1. event ( key fileds like name, descripton, etc...)
+    2. Venue
+    3. Performer
+    4. Ticket
+
+STICK TO THE CORE Entities AND TOLD INTERVIEWER FOR NOW NOT MENTIONING KEY fileds NOW, AS WE ARE TOO EARLY IN DESIGN AND WE will
+DO THIS LATER WHEN WE DO HIGH level
+
+API
+    1. GET /event/:eventId -> Event, Performer, venue, ticket[]
+    2. GET /search?term={term}&location={}&date={} -> events
+    3. POST /booking/reserver 
+            header - JWT / sessionToken - user identifier
+            body: {ticketId}
+        POST /booking/confirm
+            header - JWT / sessionToken - user identifier
+            body: {ticketId, paymentDetails}
+
+High Level design
+    DIAGRAM on excaldraw
+
+Deep Dive
+    1. Search
+        Instead of queruing via sql query when hit api, when we search - use ElasticSearch
+        to upgrade even more, we can add caching to the same search results via
+            aws opensearch elastic - node query caching
+            REDIS
+            CDN
+    2. For scalilibty -> Handle surge events popular events like worldcup, coldplay in india situation, etc.
+        If a user opens seat venue and being there for 5 sec, 1 miture or 10 mintire or 15 minutre, seat layout should get updated
+        based on the ticket? how to handle this
+            - long polling ( concepts like short polling) - super cheap and easy to implement
+        better and sophisticted approch if user spent more than hour on that seat layout
+            - Server side events (SSE) - unidirectional or webSockets (bidirectional) - persistent connection
+        above is a problem that you answer the questuion, now if popular event where millions of user come at a time then your approch
+        wiill do black/booked seat layout map to every user, that is not ideal?
+            - implement a choke point, - virtual waiting queue - enable only for popular events.
+    
+
+check diangram - https://app.excalidraw.com/l/56zGeHiLyKZ/2Z8PSPHfA8q
+https://www.hellointerview.com/learn/system-design/problem-breakdowns/ticketmaster
+
+----------------------------------------------------------------------------------------------------------
+
+Ex- uber System
+
+Functional requirements
+    1. 
+
+
+
+
+
+

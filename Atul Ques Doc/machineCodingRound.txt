@@ -1,0 +1,11 @@
+1. comment reply like fb and youtube                 - Done
+2. drag drop todo like trello                        - Done
+3. Food ordering - data, search, sort and filter     - Done
+4. email client like outlook                         - Done
+5. Sudoku                                            - Pending
+6. Tic tac toe                                       - Pending
+7. Comparison like car, bike or github profile       - Pending
+8. Make a dropdown menu and onclick outside it closes - Pending
+9. MultiStepForm                                     - Done
+10.Pagination                                        - Done
+11.AutoCompleteSearchBar                             - Done
