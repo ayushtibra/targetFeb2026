@@ -1,16 +1,14 @@
 function palindrom(x){
     const arrX = String(x).split('');
-    for(let i=1; i<arrX.length;i++){
-        if(arrX[i - 1] != arrX[arrX.length - i]){
-            return false;
-        } 
 
-        if(i > arrX.length/2){
-            break
-        }
-    }
+for (let i = 0; i < arrX.length / 2; i++) {
+  if (arrX[i] !== arrX[arrX.length - 1 - i]) {
+    return false;
+  }
+}
 
-    return true
+return true;
+
 
     // or
 
