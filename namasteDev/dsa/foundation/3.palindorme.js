@@ -35,3 +35,5 @@ return true;
 
 const result = palindrom(12121);
 console.log('first', result)
+
+// https://leetcode.com/problems/palindrome-number/description/

@@ -16,3 +16,5 @@ function countNegative(arr){
 
 const result = countNegative([2]);
 console.log('result', result)
+
+// https://namastedev.com/practice/count-negative

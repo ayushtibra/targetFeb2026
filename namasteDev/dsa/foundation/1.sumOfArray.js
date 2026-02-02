@@ -18,3 +18,5 @@ function sum(...args) {
 //For the purpose of user debugging.
 const result = sum(-1,2,3);
 console.log(result)
+
+// https://namastedev.com/practice/sum

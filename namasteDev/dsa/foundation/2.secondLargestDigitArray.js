@@ -17,3 +17,5 @@ var secondHighest = function(s) {
 };
 
 secondHighest("sjhtz8344");
+
+// https://leetcode.com/problems/second-largest-digit-in-a-string/

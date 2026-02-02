@@ -24,3 +24,5 @@ function smallestNumberArray(arr){
 
 const result = smallestNumberArray([-4,-1,2,3]);
 console.log('res',result)
+
+// https://namastedev.com/practice/find-smallest-number
