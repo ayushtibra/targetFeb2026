@@ -31,4 +31,6 @@ function removeDuplicate(nums) {
 
 const result = removeDuplicate([1, 1, 2]);
 console.log('first', result)
+
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 // Topic - two pointers

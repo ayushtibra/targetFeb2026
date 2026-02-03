@@ -12,3 +12,6 @@ function removeElement(nums,val){
 
 const result = removeElement([3,3,2,2,3],3);
 console.log('first', result)
+
+// https://leetcode.com/problems/remove-element/submissions/1906522237/
+// Topic - two pointers
