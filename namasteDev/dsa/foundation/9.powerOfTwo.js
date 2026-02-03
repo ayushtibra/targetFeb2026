@@ -14,3 +14,7 @@ function powerOfTwo(n){
 
 const result = powerOfTwo(1);
 console.log(result);
+
+// https://leetcode.com/problems/power-of-two/
+
+// topic = recursion or bit manipulation
