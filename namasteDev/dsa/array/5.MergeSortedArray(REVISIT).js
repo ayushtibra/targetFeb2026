@@ -19,5 +19,5 @@ function MergeSortedArray(nums1,m,nums2,n){
 const result = MergeSortedArray([1,2,3,0,0,0],3,[2,5,6],3);
 console.log(result);
 
-https://leetcode.com/problems/merge-sorted-array/description/
+// https://leetcode.com/problems/merge-sorted-array/description/
 // Topics - two pointers
