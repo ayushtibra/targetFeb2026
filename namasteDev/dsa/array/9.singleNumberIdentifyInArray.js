@@ -18,3 +18,6 @@ function SingleNumberIdentifyInArray(nums){
 
 const result = SingleNumberIdentifyInArray([4,1,2,1,2]);
 console.log('first', result)
+
+// https://leetcode.com/problems/single-number/description/
+// Topic - hashtable

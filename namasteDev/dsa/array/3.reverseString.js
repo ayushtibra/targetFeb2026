@@ -1,5 +1,5 @@
 function reverseString(s){
-    let prev, last;
+    let prev
     
     for(let i=0;i<s.length / 2;i++){
         prev = s[i];

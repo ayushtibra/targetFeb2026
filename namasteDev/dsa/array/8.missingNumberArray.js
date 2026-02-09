@@ -28,3 +28,6 @@ function MissingNumberArray(nums) {
 }
 
 MissingNumberArray([3, 0, 1]);
+
+https://leetcode.com/problems/missing-number/description/
+// topic - hash table

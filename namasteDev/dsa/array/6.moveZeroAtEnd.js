@@ -17,3 +17,6 @@ function moveZeroAtEnd(nums){
 }
 
 const result = moveZeroAtEnd([0,1,0,3,12]);
+
+// https://leetcode.com/problems/move-zeroes/description/
+// Topics - two pointers

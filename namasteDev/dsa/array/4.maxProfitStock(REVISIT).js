@@ -15,3 +15,6 @@ function maxProfitStock(prices) {
 
 const result = maxProfitStock([2, 4, 1]);
 console.log('first', result);
+
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+// Topics - two pointers, DP

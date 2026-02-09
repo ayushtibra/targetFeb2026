@@ -10,3 +10,6 @@ function findWordsContaining(words,x){
 }
 
 findWordsContaining(["abc","bcd","aaaa","cbc"],'a')
+
+// https://leetcode.com/problems/find-words-containing-character/description/
+// Topic - normal loop

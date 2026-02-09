@@ -13,4 +13,7 @@ function LengthOfLastWord(s){
     console.log('first', length)
 }
 
-const result = LengthOfLastWord("luffy is still joyboy");
+const result = LengthOfLastWord("luffy is still joyboy  ");
+
+// https://leetcode.com/problems/length-of-last-word/description/
+// Topic - normal loop

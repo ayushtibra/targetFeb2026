@@ -16,3 +16,6 @@ const maxConsecutiveOne = (nums) => {
 }
 
 const result = maxConsecutiveOne([1,1,0,1,1,1]);
+
+// https://leetcode.com/problems/max-consecutive-ones/description/
+// Topic - two pointer
