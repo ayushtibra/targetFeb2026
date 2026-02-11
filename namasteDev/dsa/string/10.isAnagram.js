@@ -30,3 +30,6 @@ function isAnagram(s,t){
 
 const result = isAnagram('anagram','nagaram');
 console.log('result', result)
+
+// https://leetcode.com/problems/valid-anagram/
+// Topic - hashtable
