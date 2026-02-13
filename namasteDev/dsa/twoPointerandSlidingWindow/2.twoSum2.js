@@ -12,3 +12,5 @@ function twoSum(nums, target) {
 
 const result = twoSum([2, 7, 11, 15], 9);
 console.log('first', result)
+
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
