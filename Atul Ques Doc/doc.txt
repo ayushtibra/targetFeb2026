@@ -1,0 +1,109 @@
+𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 (𝗖𝗼𝗿𝗲 𝗗𝗲𝗽𝘁𝗵)
+1. Explain the JavaScript event loop. Microtasks vs macrotasks?
+2. Implement Promise.all from scratch.
+3. Implement debounce and throttle.
+4. Explain closures with a real-world example.
+5. How does prototypal inheritance work?
+6. Difference between var, let, and const.
+7. Difference between == and ===.
+8. Explain shallow copy vs deep copy. Implement deep clone.
+9. How does this behave in arrow functions, class methods, and event handlers?
+10. Explain call, apply, and bind with use cases.
+
+𝗥𝗲𝗮𝗰𝘁 (𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗗𝗲𝗽𝘁𝗵)
+11. What is reconciliation? How does React diffing work?
+12. Why are keys important in lists?
+13. What causes unnecessary re-renders in React?
+14. Explain useEffect deeply. Cleanup? Dependency array pitfalls?
+15. Difference between useMemo and useCallback.
+16. When would you use React.memo?
+17. Controlled vs uncontrolled components.
+18. What is state batching? What changed in React 18?
+19. How does React Context work? When can it hurt performance?
+20. Build a custom hook like useDebounce or useFetch.
+
+𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 (𝗦𝗲𝗻𝗶𝗼𝗿 𝗥𝗼𝘂𝗻𝗱)
+21. Design an autocomplete search with debouncing and caching.
+22. Design an infinite scrolling feed.
+23. How would you optimize a slow React application?
+24. How would you improve Web Vitals (LCP, CLS, INP)?
+25. Design a reusable component library for a large team.
+26. How would you handle API failures and retries gracefully?
+27. How would you implement dark mode across the app?
+28. Redux vs Context vs Zustand, how do you decide in a large-scale application?
+29. How would you prevent XSS, CSRF, token leakage, and secure authentication flows in a frontend app?
+30. How would you design SSR/SSG or hydration strategy for a React application? When would you use each?
+
+𝗗𝗦𝗔 (𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗥𝗼𝘂𝗻𝗱)
+31. Maximum sum subarray (Kadane’s algorithm).
+32. Sliding window maximum.
+33. Merge k sorted linked lists.
+34. Detect a cycle in a linked list.
+35. Longest palindromic substring.
+36. Design and implement an LRU Cache.
+
+𝗛𝗶𝗿𝗶𝗻𝗴 𝗠𝗮𝗻𝗮𝗴𝗲𝗿 𝗥𝗼𝘂𝗻𝗱
+37. Explain a frontend project you built end-to-end.
+38. Describe the hardest production bug you fixed.
+39. How do you balance performance vs feature delivery?
+40. How do you handle disagreements in technical decisions?
+
+
+Here are some resources to help you out:
+1. MDN Web Docs
+ - https://lnkd.in/d3Ux-cqV
+2. Scrimba React Course
+ - https://lnkd.in/d8GyaqDR
+3. Frontend Interview Handbook
+ - https://lnkd.in/dafdY3GP
+4. The Odin Project
+ - https://lnkd.in/dXTUSXRZ
+
+
+ ---------------------------------------------------------------------------------------------
+
+ 𝗥𝗼𝘂𝗻𝗱 𝟭: 𝗗𝗦𝗔 & 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗦𝗼𝗹𝘃𝗶𝗻𝗴
+ - Longest substring without repeating characters (O(n)).
+ - Edge cases: empty strings, large inputs, all identical chars.
+ - Implement Promise.all() from scratch.
+ - Promise.all() vs Promise.race() differences.
+ - Preserve resolved order, handle errors correctly.
+ - Explain async logging order.
+
+𝗥𝗼𝘂𝗻𝗱 𝟮: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻
+ - Reusable modal API design.
+ - Handle stacking, z-index conflicts, nesting.
+ - Open/close logic, ESC key, focus trap.
+ - Animations and accessibility (ARIA, screen readers).
+ - Global manager vs local state.
+ - Edge cases: scroll lock, rapid open/close.
+
+𝗥𝗼𝘂𝗻𝗱 𝟯: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗗𝗲𝘀𝗶𝗴𝗻 - 𝗥𝗲𝗮𝗹-𝗧𝗶𝗺𝗲 𝗗𝗼𝗰 𝗘𝗱𝗶𝘁𝗼𝗿
+ - Component hierarchy (editor, toolbar, presence, comments).
+ - Data flow: local vs centralized state.
+ - Real-time updates, cursor positions, user presence.
+ - Loading/offline/sync conflicts handling.
+ - Virtualization for large docs, debouncing updates.
+ - API: versioning, conflict resolution, patch updates.
+
+𝗥𝗼𝘂𝗻𝗱 𝟰: 𝗛𝗶𝗿𝗶𝗻𝗴 𝗠𝗮𝗻𝗮𝗴𝗲𝗿 𝗥𝗼𝘂𝗻𝗱
+ - Deep dive: high-impact frontend project outcomes.
+ - Architecture trade-offs in production systems.
+ - JS internals: event loop, memory leaks, closures.
+ - Performance: render bottlenecks, bundle size.
+ - Cross-functional collaboration style.
+ - Career goals, ownership mindset.
+
+ ---------------------------------------------------------------------------------------------
+
+They’re fixed by basics:
+ - Avoid unnecessary re-renders (memoization, proper state colocation)
+ - Virtualize large lists
+ - Code-split and lazy load intelligently
+ - Debounce/throttle expensive events
+ - Move heavy work off the main thread (Web Workers)
+ - Parallelize API calls instead of chaining them
+ - Cache smartly on the client
+
+---------------------------------------------------------------------------------------------
+
