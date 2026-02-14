@@ -15,3 +15,5 @@ function mySqrt(x){
 
 const result = mySqrt(9);
 console.log('first',result)
+
+// https://leetcode.com/problems/sqrtx/description/
