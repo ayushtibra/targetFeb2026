@@ -107,3 +107,73 @@ They’re fixed by basics:
 
 ---------------------------------------------------------------------------------------------
 
+Uber Interview Experience
+Compensation: 45L + 15
+Position: SDE-2 (Frontend)
+Application Mode: Direct Application
+
+Before diving into the interview rounds, here are a few resources that I think complement this process really well.
+𝗨𝗯𝗲𝗿 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗕𝗹𝗼𝗴
+ - https://lnkd.in/dWA2ZD2T
+𝗡𝗲𝗲𝘁𝗖𝗼𝗱𝗲 by Navdeep Singh
+ - https://neetcode.io/
+ - https://lnkd.in/dCUAePcF
+𝗡𝗮𝗺𝗮𝘀𝘁𝗲 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 by Akshay Saini 🚀
+ - https://lnkd.in/dT4iuZVD
+
+𝗥𝗼𝘂𝗻𝗱 𝟭: 𝗢𝗻𝗹𝗶𝗻𝗲 𝗔𝘀𝘀𝗲𝘀𝘀𝗺𝗲𝗻𝘁 (𝟳𝟬 𝗺𝗶𝗻𝘀)
+ - Reverse / transform strings under constraints
+ - Array manipulation with edge cases
+ - Tree traversal and property validation
+ - 2D Dynamic Programming (grid-based paths or states)
+
+𝗥𝗼𝘂𝗻𝗱 𝟮: 𝗣𝗵𝗼𝗻𝗲 𝗦𝗰𝗿𝗲𝗲𝗻 - 𝗗𝗦𝗔:
+ - Backtracking on a 2D grid
+ - Handling visited states correctly
+ - Optimize naive recursion
+ - Explain how you’d scale to larger inputs
+
+𝗥𝗼𝘂𝗻𝗱 𝟯: 𝗗𝗦𝗔 (𝗢𝗻𝘀𝗶𝘁𝗲)
+ - HashMap-based frequency problems
+ - Sliding window with dynamic constraints
+ - Graph-based follow-up:
+ - Build adjacency list
+ - Traverse with BFS / DFS
+ - Explain time–space tradeoffs
+
+𝗥𝗼𝘂𝗻𝗱 𝟰: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 (React / JS)
+ - Build a live chat UI (Twitch / YouTube Live style)
+ - Consume mocked async message streams
+ - Manage real-time updates in React
+ - Handle:
+ - useEffect cleanup
+ - setInterval / setTimeout
+ - async / await vs promises
+ - Implement debounce & throttle
+ - Prevent unnecessary re-renders
+
+𝗥𝗼𝘂𝗻𝗱 𝟱: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻
+ - Design a real-time collaborative UI
+ - Decide:
+ - Component boundaries
+ - State ownership
+ - Data flow patterns
+ - Rendering strategy:
+ - Client vs server
+ - Virtualization for large lists
+ - API design from a frontend perspective
+ - Handling:
+ - Network failures
+ - Slow responses
+ - Partial data
+
+𝗥𝗼𝘂𝗻𝗱 𝟲: 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹 & 𝗟𝗲𝗮𝗱𝗲𝗿𝘀𝗵𝗶𝗽
+ - Describe a challenging project you owned end-to-end
+ - Handling disagreements with teammates
+ - Making tradeoffs under tight deadlines
+ - Receiving and acting on feedback
+ - Improving an existing system or process
+
+ ---------------------------------------------------------------------------------------------
+
+ 
