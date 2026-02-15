@@ -31,6 +31,6 @@ function peakIndexInMountainArray(arr){
     // return right - 1
 }
 
-peakIndexInMountainArray([0,4,16,10,5,2])
-
+const result = peakIndexInMountainArray([1,2,3,1])
+console.log('first', result)
 // https://leetcode.com/problems/peak-index-in-a-mountain-array/description/
