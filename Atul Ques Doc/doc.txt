@@ -176,4 +176,42 @@ Before diving into the interview rounds, here are a few resources that I think c
 
  ---------------------------------------------------------------------------------------------
 
- 
+ React Internals & Architecture
+What happens under the hood when React batches multiple state updates?
+Explain React Fiber deeply — render phase vs commit phase.
+What existed before Fiber?
+How does the reconciliation (diffing) algorithm work?
+What are the rules React follows while diffing?
+Why does behavior differ in local (StrictMode) vs production?
+How many times does useEffect execute when props don’t change — and why?
+If you can’t explain scheduling, priority lanes, interruption, and cooperative rendering — you’re not considered “senior” anymore.
+🧠 Performance & Debugging Mindset
+How do you detect memory leaks in a React app?
+How do you identify the real reason behind UI lag?
+What is the Critical Rendering Path?
+When should you use Web Workers?
+What is the purpose of AbortController?
+Now they test whether you can debug production issues — not just build UI.
+🏗️ System Design & Architecture Thinking
+How would you communicate between two components without Redux, Props, State, or Context?
+When do you need middleware in a frontend application?
+Session-based auth vs JWT — trade-offs?
+REST vs GraphQL integration differences?
+How do you implement SOLID principles in React?
+Why were HOCs and Render Props used when Custom Hooks exist?
+They want architectural reasoning — not API recall.
+🔐 Security Awareness (Non-Optional Now)
+How do you prevent XSS?
+How do you mitigate CSRF?
+How do you handle token storage securely?
+Frontend security is no longer “backend responsibility”.
+🧱 Engineering Principles Matter
+You’re expected to understand and apply:
+KISS
+YAGNI
+SOLID
+Clean component architecture
+Separation of concerns
+
+ ---------------------------------------------------------------------------------------------
+

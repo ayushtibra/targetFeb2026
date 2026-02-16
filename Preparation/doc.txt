@@ -1,0 +1,21 @@
+Q) how React reconciliation works?
+Ans) React uses virtual dom is a copy of actual DOM tree, 
+    using diffing algroithm, whenever any state or props changes in the application, 
+    it compares the new vitual dom with the previous one and identofy which element has changed.
+    and instead of updating whole DOM tree it only updates the element which are added/removed.
+
+Q) Advantages and disadvantages of using a CSS framework
+Ans) It improves development speed, had built in responsiveness, however they can increase bundle size, dependency or less flexiblity.
+    I prefer using utility-first frameworks like Tailwind with proper configuration to balance speed and maintainabilit
+
+Q) An example to check understanding of reference data type of javascript?
+Ans) 
+
+Q) asset delivery optimisation on web pages
+Ans) Using code splitting, Remove unused css, minify JS/CSS, Use WebP for better size of image, loading lazy, using CDN, caching
+    Compression like GZIP, Font optimization, less network request, remove or load less important scripts.
+
+Q) What are Semantic Tags?
+Ans) Better for accessiblity and seo, like header, footer, nav, main, section, etc
+
+
