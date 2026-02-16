@@ -1,0 +1,31 @@
+Dentsu first round of Interview
+
+- Introduction
+- challenges via software developer
+- most challenging problem ever faced
+- Closures
+- Event loop in detail
+- event delagation - i told down to up
+- how to stop that propogation where event move from down to up
+
+- local state, context api and redux - which one to use when
+- useCallback and useMemo
+- handle component level avoid re-rendering - memo
+- how to handle large image asset as it make website ugly 
+    - webP
+    - CDN/cloudflare
+    - preload
+    - lazy load that component if it is below fold
+    - progressive image loader ( I answered placeholder image)
+
+- Write a program to achieve this code
+    // input ['a', 'b', 'a', 'c', 'b', 'a']
+ 
+    // output
+    // {
+    //   3: ['a'],
+    //   2: ['b'],
+    //   1: ['c']
+    // }
+
+-------------------------------------------------------------------------

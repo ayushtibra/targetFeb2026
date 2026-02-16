@@ -19,3 +19,37 @@ Q) What are Semantic Tags?
 Ans) Better for accessiblity and seo, like header, footer, nav, main, section, etc
 
 
+Q) What is closure and what purpose does it serve in javascript?
+Ans) A closure is the combination of a function and its surrounding state (lexical environment), which gives the function 
+    continuous access to its outer scope's variables.
+    
+    ex-
+    function makeCounter() {
+    let count = 0; // The variable that will be 'closed over'
+
+    // The inner function is a closure
+    return function() {
+        count++;
+        return count;
+    };
+    }
+
+    const counter1 = makeCounter();
+    console.log(counter1()); // Output: 1
+    console.log(counter1()); // Output: 2
+
+    const counter2 = makeCounter();
+    console.log(counter2()); // Output: 1 (starts a new, independent count)
+
+    Because of lexical scoping
+
+    What Purpose Does Closure Serve?
+    - Data Encapsulation (Private Variables)
+    - currying
+
+Q) What is an event loop?(while answers include macro and micro queue both).
+Ans) event loop is a JavaScript runtime mechanism that enables asynchronous programming by constantly monitoring the call stack
+     and task queues, allowing the single-threaded engine to handle tasks without blocking the main thread. It executes synchronous 
+     code first, then fully processes all tasks in the microtask queue (high priority, e.g., Promises) before handling one macrotask
+    (e.g., setTimeout). 
+
