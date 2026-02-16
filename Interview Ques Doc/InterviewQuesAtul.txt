@@ -1,0 +1,108 @@
+JAVASCRIPT :- 
+
+1.	What is closure and what purpose does it serve in javascript?
+2.	What is an event loop?(while answers include macro and micro queue both).
+3.	What is difference == and === and what algorithm used under the hood?
+4.	What is currying and why we need? (Explain with example this concept).
+5.	Create a polyfill of curry function
+
+const curried = (func) => {
+  return function curried(...args) {
+    if(args.length>=func.length) {
+       return func(...args);
+    } else {
+        return function(...nextArgs) {
+            return curried(...args, ...nextArgs);
+        }
+    }
+  }
+}
+
+const curriedVersion = curried(obj.sum.bind(obj));
+console.log("output123",curriedVersion(1)(2)(3));
+6.	What is promise and why do need it and inplace callback( dont tell callback hell please check what is inversion of control)
+7.	Different stage of promise and what is promise.all, allSettled, race, any?
+8.	Create polyfill for promise and reduce, map, filter
+9.	What is prototype and why do we need it if we have class in javascript?
+10.	How Prototype works under the hood (TIP: array can filter n other method because its exist in their prototype)
+11.	What is call, bind and apply? (check at the end, create polyfill of it)
+12.	What is this and how its value getting differ when call from global and from block and from function.
+13.	What is debounce and throttling and write polyfill for it.
+14.	What is hoisting
+15.	What is boxing and unboxing
+
+----------------------------------------------------------------------------------------
+
+React JS Interview
+
+1. What all hook we used for optimization in ReactJS 
+2. What is difference between ReactJS and NextJS
+3. Life cycle method of React class as well as function component
+4. How can you handle Large data list on initial load?
+5. What is props drilling and what do you we use context?
+6. What is redux and Zustand and why do we use this state management liberary instead of Context
+7. What is Higher order component and why do we need in ReactJS?
+8. What is custom hook and why do we  use in ReactJS?
+9. What is virtual DOM?
+10. What algorithm react use for what is change in DOM
+11. What is Fiber Node and how does its works under hood and why do we need in ReactJS?
+12. What is synthetic event in reactjs?
+13. What is How does react decide which component need to re-render?
+14. What is difference between synchronous and concurrent rendering?
+15. What is batch update in reactjs?
+16. How will you optimize unncecessary re-render?
+
+----------------------------------------------------------------------------------------
+
+NextJS
+What is Dehydration?
+What is SSR?
+What is difference between nextjs version 13-14-15?
+What is difference client side and server side component?
+What is next.config.js file in why does it do and why we need it?
+What bundler use in nextjs?
+Why diffrence between Reactjs and Nextjs?
+
+----------------------------------------------------------------------------------------
+
+Machine coding round questions
+
+Machine ke liye 
+1. VS code file system
+2. Star rating
+3. TODO list
+4. Fetch data from public route and show data
+5. Form submission using custom form
+
+----------------------------------------------------------------------------------------
+
+TypeScript
+
+1. What is TypeScript and how is it different from JavaScript?
+2. What are the key features of TypeScript?
+3. How does TypeScript improve code quality and development?
+4. What is the difference between 'any', 'unknown', and 'never' types?
+5. What are interfaces in TypeScript? How are they different from type aliases?
+6. What are enums in TypeScript? When would you use them?
+7. What is type inference in TypeScript?
+8. What is the difference between optional and default parameters in TypeScript?
+9. What are generics in TypeScript? How are they used?
+10. How does TypeScript handle type compatibility and structural typing?
+11. What are union and intersection types in TypeScript?
+12. What is a tuple in TypeScript?
+13. What are utility types in TypeScript like Partial, Readonly, Pick, and Omit?
+14. How can you create and use custom types in TypeScript?
+15. What is type assertion in TypeScript?
+16. How do you use modules and namespaces in TypeScript?
+17. What is declaration merging in TypeScript?
+18. What are ambient declarations and when are they used?
+19. How does TypeScript handle third-party JavaScript libraries?
+20. What is tsconfig.json and what are its key options?
+21. What are the benefits of using TypeScript in large-scale applications?
+22. How does TypeScript support React and Angular development?
+23. How do you configure TypeScript in a Node.js project?
+24. What is the difference between compile-time and runtime errors in TypeScript?
+25. What are mapped types in TypeScript?
+
+----------------------------------------------------------------------------------------
+
