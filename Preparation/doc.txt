@@ -93,4 +93,54 @@ Q- How to handle race condition in API calls?
     By using AbortController
     ex - inventory stock of last item ,coupon multiple time use, banking transaction
 
+Q- What is React Concurrent Mode?
+    Concurrent rendering improves perceived performance by prioritizing urgent updates over heavy UI updates.
+    It allows react to decide - Prioritize urgent updates, Interrupt rendering. enabled by startTransition, useTransition, Suspense
+
+Q- InterFace vs type
+    interface - mainly for object, can be extended and merged
+    type - more flexible, can represent union, primitives
+
+Q- What is Generics?
+    Generics let you write reusable, type-safe code that works with multiple types instead of hardcoding a specific one
+
+Q- What is utility type? Name 3.
+
+Q- Render and commit phase in React
+    Render phase is pure and side-effect free, commit phase mutates the DOM.
+    Render - Calculate what changes needed and computation phase
+    Commit - applied changes to DOM, runs useEffect, runs lifecycle menthods
+
+Q- what is Hydration Mismatch
+    The server and client must produce identical output on the first render. 
+    Anything dynamic or browser-specific should be deferred to useEffect so it only runs after hydration is complete.
+    ex - browser apis, time based func (math.random, new Date()), localStograge
+
+Q- what is Server Components
+    Server components improve performance by reducing client-side JavaScript.
+    as it runs on server, we cant use useState..., browser apis
+
+Q- How To Enable & Maximize Tree Shaking
+Tree shaking reduces bundle size by eliminating dead code at build time.
+    Use Import/Export syntax, dont use require()
+    Use named exports over default exports:
+    Avoid importing entire libraries:
+    Use libraries that support tree shaking:
+
+Q- How to design Scalable Frontend Architecture
+    1. Architecture Approach - Use seperate module, for features like fight, hotel, payment
+    2. Rendering - SEO Pages (SSR/ISR), Highly interactive Page (CSR), User Server components
+    3. State management - Local State, Global State, React Query for Caching, Avoid overusing context and props drilling
+    4. Performance - code splitting, fynamic import, Vistualization, Image optimization, lazy loading, CDN
+    5. Folder Structure - Atomic Design
+    6. monitoring
+    I focus on scalability, performance, separation of concerns, and minimizing re-renders while keeping the architecture maintainable for future teams.
+
+Q- Server side or client side, which to choose
+    SSR — server does the heavy lifting, user gets content fast, but needs hydration to become interactive.
+    SSR- SEO better, user see content on first load
+    CSR — browser does the heavy lifting, user waits longer initially, but gets a snappy app experience afterwards.
+    CSR - user see blank screen, bad for seo on first load
+    - After first load, CSR wins, as no server transition needed, page trans are faster
+
 Q- 
