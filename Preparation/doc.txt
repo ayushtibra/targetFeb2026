@@ -1,55 +1,96 @@
-Q) how React reconciliation works?
-Ans) React uses virtual dom is a copy of actual DOM tree, 
+Q- how React reconciliation works?
+    React uses virtual dom is a copy of actual DOM tree, 
     using diffing algroithm, whenever any state or props changes in the application, 
     it compares the new vitual dom with the previous one and identofy which element has changed.
     and instead of updating whole DOM tree it only updates the element which are added/removed.
 
-Q) Advantages and disadvantages of using a CSS framework
-Ans) It improves development speed, had built in responsiveness, however they can increase bundle size, dependency or less flexiblity.
+-------------------------------------------------------------------------------
+
+Q- Advantages and disadvantages of using a CSS framework
+    It improves development speed, had built in responsiveness, however they can increase bundle size, dependency or less flexiblity.
     I prefer using utility-first frameworks like Tailwind with proper configuration to balance speed and maintainabilit
 
-Q) An example to check understanding of reference data type of javascript?
-Ans) 
+-------------------------------------------------------------------------------
 
-Q) asset delivery optimisation on web pages
-Ans) Using code splitting, Remove unused css, minify JS/CSS, Use WebP for better size of image, loading lazy, using CDN, caching
+Q- An example to check understanding of reference data type of javascript?
+
+-------------------------------------------------------------------------------
+
+Q- Asset delivery optimisation on web pages
+    Using code splitting, Remove unused css, minify JS/CSS, Use WebP for better size of image, loading lazy, using CDN, caching
     Compression like GZIP, Font optimization, less network request, remove or load less important scripts.
 
-Q) What are Semantic Tags?
-Ans) Better for accessiblity and seo, like header, footer, nav, main, section, etc
+-------------------------------------------------------------------------------
 
+Q- What are Semantic Tags?
+    Better for accessiblity and seo, like header, footer, nav, main, section, etc
 
-Q) What is closure and what purpose does it serve in javascript?
-Ans) A closure is the combination of a function and its surrounding state (lexical environment), which gives the function 
+-------------------------------------------------------------------------------
+
+Q- What is closure and what purpose does it serve in javascript?
+    A closure is the combination of a function and its surrounding state (lexical environment), which gives the function 
     continuous access to its outer scope's variables.
     
-    ex-
-    function makeCounter() {
-    let count = 0; // The variable that will be 'closed over'
-
-    // The inner function is a closure
-    return function() {
-        count++;
-        return count;
-    };
-    }
-
-    const counter1 = makeCounter();
-    console.log(counter1()); // Output: 1
-    console.log(counter1()); // Output: 2
-
-    const counter2 = makeCounter();
-    console.log(counter2()); // Output: 1 (starts a new, independent count)
-
     Because of lexical scoping
 
     What Purpose Does Closure Serve?
     - Data Encapsulation (Private Variables)
     - currying
 
-Q) What is an event loop?(while answers include macro and micro queue both).
-Ans) event loop is a JavaScript runtime mechanism that enables asynchronous programming by constantly monitoring the call stack
-     and task queues, allowing the single-threaded engine to handle tasks without blocking the main thread. It executes synchronous 
-     code first, then fully processes all tasks in the microtask queue (high priority, e.g., Promises) before handling one macrotask
+-------------------------------------------------------------------------------
+
+Q- What is an event loop?(while answers include macro and micro queue both).
+    Event loop is a JavaScript runtime mechanism that enables asynchronous programming by constantly monitoring the call stack
+    and task queues, allowing the single-threaded engine to handle tasks without blocking the main thread. It executes synchronous 
+    code first, then fully processes all tasks in the microtask queue (high priority, e.g., Promises) before handling one macrotask
     (e.g., setTimeout). 
 
+-------------------------------------------------------------------------------
+
+Q- What happens if key prop is missing in list?
+Keys provide identity to list elements, enabling efficient reconciliation and correct state preservation.
+    Unnecessary re-renders, Incorrect DOM updates, UI Bugs - why - React’s reconciliation algorithm uses key to: which element change/add/removed.
+
+    And what if we use index as key? what are problems?
+    Using index as key is problematic when items are added/deleted, filtered
+    It cause performance issues, wrong state mapping, re-rendeing every item in list
+
+Q- Controlled vs Uncontrolled
+    Controlled - React handle the data of the form, usefule - easy data validation, dis - potentioal re-render
+    Uncontrolled - DOM manages the state, just like regular HTML form, in react use - ref. Usefule - less re-render, harder to validate
+
+Q- What is Hydration?
+    It happens in SSR app, (server send HTML, browser rende HTML, React attach event listener, React make it interactive)
+    Large JS bundle makes slower Hydration - as to dowload, parse and execeute code on main thread slows down.
+    We can use Code Splitting and Lazyloading, Partial Hydration, Reduce bundle Size(light library).
+
+Q- What is React Batching?
+    React batches multiple state updates into a single re-render for performance optimization.
+    In React-18, batching works in event handler, setTimeout, promise, native events
+
+Q- What is Suspense?
+    It improved performance and used with lazy loaded component. show fallback UI while waiting for lazy comp
+
+Q- useEffect vs useLayoutEffect?
+    useEffect runs after paint and non-blocking(asynchronous), used for api calls, timers, subscr.
+    wherease layout runs before paint and blocking, use only when we need to measure or mutate the dom synchronous.
+    useEffect -> Render - Paint - useEffect
+    useLayoutEffect -> Render - useLayoutEffect - Paint ( runs synchronous after react perform all dom mutate, but before browser paint)
+
+Q- What is Stale Closure?
+    Closures capture variables at the time the function is created., so without dependency array in useEffect can cause stale data
+
+Q- How to optimise large items of list like 3000+ list of items and when we search
+    Using Pagination, load More, infinite scroll, virtualization, debounce search input, memozie items, lazy load image
+    use Suspension, cache search queries
+
+Q- What is React Fiber?
+    Fiber enables React to prioritize urgent updates like user input over non-urgent updates like rendering large lists.
+    benefits - Prioritizing updates, Pausing and resuming rendering, Incremental rendering
+
+Q- How to handle race condition in API calls?
+    To prevent stale responses overriding latest search results, I would cancel previous API calls using AbortController.
+    By using AbortController
+    ex - inventory stock of last item ,coupon multiple time use, banking transaction
+
+Q- 
