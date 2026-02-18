@@ -5,6 +5,7 @@ Dentsu first round of Interview
 - most challenging problem ever faced
 - Closures
 - Event loop in detail
+- Difference between Promise.all and Promise.race
 - event delagation - i told down to up
 - how to stop that propogation where event move from down to up
 
@@ -29,3 +30,31 @@ Dentsu first round of Interview
     // }
 
 -------------------------------------------------------------------------
+
+Appinventiv first round of Interview
+
+There were many Questions related to the JS language. Like the differneces between the First Class Functions, High order function. Diff b/w let, var and const.
+Event loop and Promises and their uses
+Prime number
+substring in given strings
+How do you flatten an object or a nested object?
+How can APIs be implemented and consumed in Next.js?
+What is TypeScript and what are its key features?
+What is the difference between authorization and authentication in web applications?
+What is the work process of Agile methodologies?
+What is a JWT token, and why is it used in web applications?
+Closures
+Hosisting
+
+
+- Three types of rendering - Client side, Server side and Static - which one we use when
+- When to use Context API and Redux? and What is in previous Redux and new Redux toolkit? Redux thunk and saga
+- useImperativeHandle and useuselayouteffect and uselayout
+- What introduced in React19?
+- What aspect you consider in terms of security of website or how do you handle security on your website
+- Which frontend security practices have you implemented?
+- How to handle performance of website
+- find the longest substring without duplicate characters
+
+-------------------------------------------------------------------------
+
