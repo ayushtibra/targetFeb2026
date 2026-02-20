@@ -215,3 +215,131 @@ Separation of concerns
 
  ---------------------------------------------------------------------------------------------
 
+➤ 𝗙𝘂𝗻𝗱𝗮𝗺𝗲𝗻𝘁𝗮𝗹 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀:
+ 1. JavaScript Fundamentals (closures, scope, arrays, objects):
+ - https://javascript.info/
+
+ 2. HTML & Semantic Markup:
+ - https://lnkd.in/dyxEhMpQ
+
+ 3. CSS Basics (Flexbox, Grid, responsive design):
+ - https://lnkd.in/drbNQSFp
+ - https://lnkd.in/e9ecbmeS
+
+➤ 𝗖𝗼𝗿𝗲 𝗥𝗲𝗮𝗰𝘁 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀
+ 1. React Basics:
+ - Components, Props, State, Events
+ - https://react.dev/learn
+
+ 2. Hooks:
+ - useState, useEffect, useRef, useMemo, useCallback
+ - https://lnkd.in/euYePw-Y
+
+ 3. Performance:
+ - Memoization, re-renders, keys
+ - https://lnkd.in/dtASF4tC
+
+➤ 𝗨𝗜 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀 & 𝗖𝗼𝗺𝗽𝗼𝗻𝗲𝗻𝘁 𝗗𝗲𝘀𝗶𝗴𝗻
+ 1. Reusable Components
+ - Component composition, controlled vs uncontrolled
+ - https://lnkd.in/dcAtRz8j
+
+ 2. Common UI Patterns
+ - Modal, Tabs, Dropdown, Toast, Infinite Scroll
+ - https://headlessui.com/
+
+➤ 𝗪𝗮𝘁𝗰𝗵 𝗥𝗲𝘀𝗼𝘂𝗿𝗰𝗲𝘀:
+ 1. Piyush Agarwal:
+ - https://lnkd.in/dfF2XeBu
+
+ 2. RoadsideCoder:
+ - https://lnkd.in/drT5Xk64
+
+ 3. Akshay Saini 🚀:
+ - https://lnkd.in/diFKEPGK
+
+ 4. freeCodeCamp:
+ - https://lnkd.in/dDgTVcKr
+
+ 5. Codevolution:
+ - https://lnkd.in/dh3KbNN9
+
+ 6. Kevin Powell (CSS):
+ - https://lnkd.in/dgSVS43M
+
+➤ 𝗧𝗼𝗽 𝗥𝗲𝗽𝗼𝘀𝗶𝘁𝗼𝗿𝗶𝗲𝘀 𝘁𝗼 𝗠𝗮𝘀𝘁𝗲𝗿 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴:
+ - https://lnkd.in/du8W2Hdb
+ - https://lnkd.in/dNPkuFvJ
+ - https://lnkd.in/d6guTqxC
+ - https://lnkd.in/d7rVDK5t
+
+➤ 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗮𝗹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲𝘀:
+ - Frontend machine coding problems:
+ - https://lnkd.in/du8W2Hdb
+
+ - Practice challenges:
+ - https://lnkd.in/dSk6AKdM
+
+➤ 𝗦𝗲𝗹𝗳-𝗔𝘀𝘀𝗲𝘀𝘀𝗺𝗲𝗻𝘁:
+ - Frontend interview questions:
+ - https://lnkd.in/dNPkuFvJ
+
+ - Practice challenges:
+ - https://lnkd.in/dBbAXsTE
+
+ ---------------------------------------------------------------------------------------------
+
+ 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 𝗞𝗲𝘆 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀:
+1. Component Lifecycle & State Management : https://lnkd.in/eFDc4pp7
+2. Virtual DOM & Diffing : https://lnkd.in/dkV7KYbt
+3. Props Drilling vs Context API : https://lnkd.in/emn4EutP
+4. Controlled vs Uncontrolled Components : https://lnkd.in/ePnZVn9G
+5. Event Handling & Debouncing : https://lnkd.in/es_GQQDd
+6. Responsive Design & CSS-in-JS : https://lnkd.in/euk_YV2z
+7. Performance Optimization : https://lnkd.in/ewBEzwbP
+8. Error Boundaries & Suspense : https://lnkd.in/eHFeztAe
+9. Custom Hooks & Composition : https://lnkd.in/eY_hVcdD
+10. Accessibility : https://lnkd.in/ebUZMV4F
+
+𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗕𝗹𝗼𝗰𝗸𝘀:
+1. Flexbox & CSS Grid Mastery : https://lnkd.in/e9ecbmeS
+2. React Hooks : https://lnkd.in/euYePw-Y
+3. State Management : https://lnkd.in/e_pF2cCh
+4. Routing : https://lnkd.in/egiSjhQR
+5. Forms : https://lnkd.in/eyNeyqvU
+6. HTTP Clients : https://lnkd.in/eKGJ5tvU
+7. Styling : https://tailwindcss.com/
+8. Animations : https://lnkd.in/efnY5qTa
+9. Charts : https://recharts.org/
+10. Drag & Drop : https://lnkd.in/esdF3UJJ
+11. Infinite Scroll : https://lnkd.in/eNCQc26B
+12. File Upload : https://lnkd.in/eiipbx8h
+13. Real-time Updates : https://socket.io/
+14. Testing : https://lnkd.in/eYPpGGFy
+15. Build Tools : https://vitejs.dev/
+
+𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗮𝗹 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀:
+1. Container/Presentational Components : https://lnkd.in/enWdtcCA
+2. Compound Components Pattern : https://lnkd.in/emn4EutP
+3. Render Props & HOCs : https://lnkd.in/emn4EutP
+4. Feature-Sliced Design : https://lnkd.in/euu-ZxUG
+5. Atomic Design Principles : https://lnkd.in/ekp3sytU
+
+𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 𝗣𝗿𝗼𝗯𝗹𝗲𝗺𝘀 (𝟰𝟱-𝟵𝟬 𝗺𝗶𝗻 𝗿𝗼𝘂𝗻𝗱𝘀):
+1. E-commerce Product Card : https://lnkd.in/eVnsdND9
+2. Todo App Drag-Drop : https://lnkd.in/ezpW3k-b
+3. Expense Tracker : https://lnkd.in/eJKxB4zk
+4. Autocomplete Search : https://lnkd.in/es_GQQDd
+5. Multi-step Form Wizard : https://lnkd.in/ena3patF
+6. Image Gallery : https://lnkd.in/e5FkenXy
+7. Chess Board : https://lnkd.in/eX_EQdnu
+8. Kanban Board : https://dndkit.com/
+9. Data Table : https://lnkd.in/e-hEC4e9
+10. Chat Interface : https://socket.io/how-to
+
+𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 (𝗛𝗟𝗗 + 𝗟𝗟𝗗):
+1. Design Netflix Clone (Hero + Row Cards)
+2. Build Twitter-like Feed with Infinite Scroll
+3. Create WhatsApp Web Clone (Real-time chat)
+4. Design Zomato Restaurant Cards + Search
+5. Build Google Maps Clone (Markers + Directions)
