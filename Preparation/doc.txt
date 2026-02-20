@@ -143,4 +143,27 @@ Q- Server side or client side, which to choose
     CSR - user see blank screen, bad for seo on first load
     - After first load, CSR wins, as no server transition needed, page trans are faster
 
+Q- event.preventDefault() and event.stopPropagation()
+    preventDefault -  method is used in JavaScript to stop the default action that naturally belongs to an event from occurring
+    stopPropagation - stops an event from bubbling up (or capturing down) the DOM tree.
+
+Q- Event Delegation
+    Event Delegation means attaching a single event listener on a parent element to handle events from multiple child elements,
+    instead of adding listeners to each child individually.
+
+Q- Event Bubbling and Event Capturing
+    Bubbling - events automatically travel up the DOM tree from child to parent.
+    Capturing - Capturing descends from the outermost ancestor to the target
+    By default, event listeners use the bubbling phase. To listen in the capturing phase, pass true as the third argument:
+
+Q- Primitive vs non-primitive
+    Primitive values are immutable, compared by value ( string, number, boolean, null).
+    Non-primitive are mutable, compared by reference (Object, Arr)
+
+Q- Promise.all vs .race vs .any
+    .all - Waits for all to succeed. If any one fails, it immediately rejects.
+    .allSettled - Waits for all to finish, regardless of success or failure. (never rejects, always give outcome)
+    .race - Returns the result of whichever promise finishes first (resolve or reject).
+    .any - Returns the first one that succeeds. Ignores rejections unless all fail
+
 Q- 
