@@ -8,7 +8,7 @@ GreatFrontend - 4-5 problems per day
     - polyfills
     - others
 
-DSA - daily 10 problems
+DSA - daily 5 problems
     - Sliding window
     - HashMap problems
     - Two Pointers
