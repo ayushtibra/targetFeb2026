@@ -58,3 +58,38 @@ Hosisting
 
 -------------------------------------------------------------------------
 
+Intellias FE round
+
+- Solid Principals mandatory or optional?
+- What is Solid Principals?
+- What is SSP in it?
+
+-------------------------------------------------------------------------
+
+Yatra First round of Interview
+
+- useMemo, useCallback, React.memo
+- React.memo -> if we have a button and on click any event happens - does that component re-render
+- lifecycle methods
+- compenentwillunmout in functional component
+- when we return from useEffect, does that time gets cleaned or that component gets unmount?
+- what is polyfill
+- polyfill for groupby
+- types of modules in js
+- what is module federation?
+- hoisting
+- event loop
+- If there are 4 timeout, and 1 timeout there is a promise, then order of execution
+- youtube video streaming when we leave and when we reopen
+- when we change quality of video, how it will do?
+- what is LCP, FCP, CLS and TBT
+- how did you measure reduce build time? what strategies and how did you identify this problem
+- what is the value of LCP, CLS?
+- what helps you in reducing build time by upgrading nextjs version from 11 to 15
+- what is SSR, CSR, SSG and how did you implement it
+- how it works in browser?
+- what is garbage collector
+- what is memory leak
+
+-------------------------------------------------------------------------
+

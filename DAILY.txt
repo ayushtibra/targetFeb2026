@@ -1,0 +1,88 @@
+Job Apply
+    - Apply to 25–30 jobs.
+    - Message 10 recruiters on LinkedIn
+    - Ask 5 friends for referral
+    - Reply to old HR emails
+
+GreatFrontend - 4-5 problems per day
+    - polyfills
+    - others
+
+DSA - daily 10 problems
+    - Sliding window
+    - HashMap problems
+    - Two Pointers
+    - Basic recursion
+    - Array
+    - String
+    - Stack / Queue / Linkedin List
+
+System Design - daily 1 problem and 4-5 questions via AI
+
+Machine Coding Round - daily 1-2 problem
+
+React and JS - 10 questions prepare via AI
+
+------------------------------------------------------------------------
+Leaving early gives you nothing. - No matter what happens, you DO NOT leave the call.
+    I’m not fully sure about this one. May I take a minute to think?
+    I’m not familiar with this yet, but I’d love to explore it
+    I know the high-level idea, but not deep implementation details.
+    I haven’t worked on this directly, but I’ll try to reason it out.
+    Worst case:
+        You get rejected (same result)
+    Best case:
+        You recover
+        You get partial credit
+        You learn real questions
+
+-------------------------------------------------------------------------
+Connect first → then message after acceptance.
+    Search on LinkedIn
+        “Technical recruiter React Noida”
+        “Frontend hiring React Bangalore”
+        “Talent acquisition product company”
+        “React hiring Gurugram”
+        “Immediate joiner React NCR”
+        “Frontend developer Noida”
+    Search on Google
+        “Company name careers email”
+        “Company name HR email”
+    Click People filter.
+    Sort by “Past 24 hours” 
+    Apply within first 1–2 hours of posting
+    Send connection request with note
+        Hi [Name], I’m a Senior React/Next.js developer (6+ yrs) currently exploring opportunities. Would love to connect
+Use Naukri Aggressively
+
+-------------------------------------------------------------------------
+Message/Conversations
+Network - 
+    “Hi, I’m actively looking for Senior/Lead Frontend roles (React/Next.js). Immediate joiner. If you know of any openings, I’d really appreciate a referral
+
+Recuriter - 
+    Hi [Name],
+    I’m a Lead Frontend Engineer (6+ yrs), currently an Immediate Joiner based in Gurugram.
+    I’ve led teams and worked on SSR, performance optimization & scalable UI systems.
+    Would love to discuss if you’re hiring for senior/lead frontend roles.
+    Thanks, Ayush
+
+-------------------------------------------------------------------------
+HR Ques
+Salary expectation  
+    Looking in the 24–28 range depending on role & responsibilities.
+
+Notice Period
+    30 days, can join immedeate also
+    Serving notice period and lwd is 
+
+You have resigned and you dont have any offer
+    Its been a week since I started looking out
+
+What is the reason of job change
+    Tell truth, comapny not taking up react projects, and they are moving to shopify. This is not align with my expectation in terms
+    of role, learning and growth. may include layoff of the department
+
+If you get offer from other company while interviewing? whom do you choose
+    I am not targeting X amount of Salary, as I am more driven toward roles and responsibilities in this era of AI.
+    Wanted to grow and learn with the company.
