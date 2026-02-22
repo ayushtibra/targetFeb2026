@@ -343,3 +343,45 @@ Separation of concerns
 3. Create WhatsApp Web Clone (Real-time chat)
 4. Design Zomato Restaurant Cards + Search
 5. Build Google Maps Clone (Markers + Directions)
+
+---------------------------------------------------------------
+
+𝗖𝗼𝗿𝗲 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 / 𝗧𝘆𝗽𝗲𝗦𝗰𝗿𝗶𝗽𝘁
+- How does event delegation work in JavaScript? Why is it efficient?
+- Difference between let, const, and var. Hoisting and Temporal Dead Zone.
+- Explain the JavaScript event loop (Call Stack, Web APIs, Callback Queue, Microtask Queue).
+- How does === differ from ==? Explain type coercion with examples.
+- What is Closure? Provide a real-world use case.
+- Explain async/await vs Promises. How does the event loop handle them?
+- Deep copy vs Shallow copy in JavaScript objects/arrays.
+- Difference between nullish coalescing (??) and logical OR (||).
+- Explain WeakMap and WeakSet with use cases.
+- Scenario Based: You're building a real-time chat application where multiple messages arrive simultaneously. How would you ensure the DOM updates efficiently without blocking the main thread?
+
+𝗥𝗲𝗮𝗰𝘁 / 𝗡𝗲𝘅𝘁.𝗷𝘀
+- Difference between useEffect and useLayoutEffect.
+- What is React Fiber? How does it improve rendering performance?
+- How does React handle circular dependencies in useEffect?
+- How to implement protected routes with authentication (Context API, Redux)?
+- How does Next.js automatic code splitting and SSR work?
+- How does Next.js handle environment variables (.env.local vs .env.production)?
+- Difference between ReactDOM.render() and createRoot() in React 18.
+- Scenario Based: You're designing a dashboard where chart updates, user notifications, and data fetches must happen independently. How would you use React Context / Custom Hooks to achieve this?
+
+𝗦𝘁𝗮𝘁𝗲 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 / 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲
+- Difference between useState and useReducer.
+- How does React manage re-renders (useMemo, useCallback, React.memo)?
+- How do you implement optimistic updates vs pessimistic updates in React?
+- Explain React reconciliation and the Virtual DOM diffing algorithm.
+- Component lifecycle methods vs Hooks lifecycle (Mounting, Updating, Unmounting).
+- Scenario Based: You have an e-commerce product listing where multiple users can add items to cart simultaneously. How would you use React Query / SWR with optimistic updates to prevent stale UI?
+
+𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻
+- Design a real-time collaborative text editor (like Google Docs).
+- Design a Rate limiter for API calls in a SPA.
+- Design a dynamic pagination system for infinite scrolling.
+- Design a client-side state management system like Redux Toolkit.
+- Design a user authentication flow with social login (OAuth, JWT tokens).
+
+---------------------------------------------------------------
+
