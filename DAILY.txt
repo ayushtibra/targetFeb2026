@@ -23,6 +23,28 @@ Machine Coding Round - daily 1-2 problem
 
 React and JS - 10 questions prepare via AI
 
+AI
+    Architecture & Design
+    Performance Engineering
+    Production Engineering
+    React Advanced
+    TypeScript Advanced
+    Core JS Deep Dive
+
+    Round 1 – DSA / JavaScript Problem Solving
+        Array/string manipulation
+        Sliding window
+        Recursion
+        Object flattening
+        Polyfills
+        Debounce/throttle
+        Promise implementation
+        Async control
+
+    Round 2 – Machine Coding
+    Round 3 – Architecture & Design Frontend System Design
+    Round 4 – Leadership / Design Principles
+
 ------------------------------------------------------------------------
 Leaving early gives you nothing. - No matter what happens, you DO NOT leave the call.
     I’m not fully sure about this one. May I take a minute to think?

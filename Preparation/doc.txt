@@ -166,4 +166,22 @@ Q- Promise.all vs .race vs .any
     .race - Returns the result of whichever promise finishes first (resolve or reject).
     .any - Returns the first one that succeeds. Ignores rejections unless all fail
 
-Q- 
+Q- How browser requests work
+    1.User initate a request
+    2.Browser check cache for IP, if not found check DNS servers
+    3.established a TCP conenctions
+    4.Browser send http request to server
+    5.server process request
+    6.server send http response
+    7.browser render content ( parse html, make request for css na js, build DOm, paint on screen)
+
+Q- lifecycle in class
+    - Mount phase
+        Constructor -> render -> componentdidmount()
+    - Update
+        shouldComponentupdate -> render -> compoenntdidupdate
+    - unmount
+        componentWillUnmount
+
+Q- When to use redux, context api?
+    
