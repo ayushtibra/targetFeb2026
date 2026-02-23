@@ -80,20 +80,20 @@ Use Naukri Aggressively
 -------------------------------------------------------------------------
 Message/Conversations
 Network - 
-    “Hi, I’m actively looking for Senior/Lead Frontend roles (React/Next.js). Immediate joiner. If you know of any openings, I’d really appreciate a referral
+“Hi, I’m actively looking for Senior/Lead Frontend roles (React/Next.js). Immediate joiner. If you know of any openings, I’d really appreciate a referral
 
 Recuriter - 
-    Hi [Name],
-    I’m a Lead Frontend Engineer (6+ yrs), currently an Immediate Joiner based in Gurugram.
-    I’ve led teams and worked on SSR, performance optimization & scalable UI systems.
-    Would love to discuss if you’re hiring for senior/lead frontend roles.
-    Thanks, Ayush
+Hi [Name],
+I’m a Lead Frontend Engineer (6+ yrs), currently an Immediate Joiner based in Gurugram.
+I’ve led teams and worked on SSR, performance optimization & scalable UI systems.
+Would love to discuss if you’re hiring for senior/lead frontend roles.
+Thanks, Ayush
 
-    Hi Tushar
-    Hope you are doing well.
-    Just needed some help. I am looking for a role at Capgemini, and I find this relevant - https://www.linkedin.com/jobs/view/4359573839
+Hi Tushar
+Hope you are doing well.
+Just needed some help. I am looking for a role at Capgemini, and I find this relevant - https://www.linkedin.com/jobs/view/4359573839
 
-    Do you think you can refer me to this role, please?
+Do you think you can refer me to this role, please?
 
 -------------------------------------------------------------------------
 HR Ques

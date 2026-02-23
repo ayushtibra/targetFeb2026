@@ -1,3 +1,8 @@
 - Debounce
 - Throttle
 - Call, Apply, Bind
+- react 18 or 19 new features
+- next new features
+- useReducer?
+- Redux thunk and saga
+- microfrontend

@@ -385,4 +385,31 @@ Separation of concerns
 
 ---------------------------------------------------------------
 
+If you are giving an interview in any good product-based company, 4-5 rounds are just:
 
+- Machine Coding, DSA (2 to 3 rounds), and 
+- System Design (1 to 2 rounds)
+
+No matter what others say, that's my experience: we have to excel in these three areas (Machine Coding, Frontend Development, and System Design, including LLD and HLD) to clear any interview; there are no shortcuts.
+
+The below playlists will help you in your preparation:
+
+1. Low-Level Design from Basics to Advanced
+ - https://lnkd.in/d6wu3Bnm
+
+2. High-Level Design from Basics to Advanced
+ - https://lnkd.in/dBhRp73y
+
+3. JavaScript from Basics to Advanced
+ - https://lnkd.in/dXEZHwbw
+
+4. React from Basics to Advanced
+ - https://lnkd.in/dnYwdeCa
+
+5. Best playlists for Frontend Developer
+ - https://lnkd.in/drrwUzDS
+
+6. DSA from Basics to Advanced
+ - https://lnkd.in/d4Kn_AzZ
+
+ ---------------------------------------------------------------

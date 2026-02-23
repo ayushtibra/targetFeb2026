@@ -183,5 +183,52 @@ Q- lifecycle in class
     - unmount
         componentWillUnmount
 
-Q- When to use redux, context api?
+Q- frontend architecture for a large scale 
+    - Performance
+        LCP, CLS, FCP, TTFB, 
+    - Scalability
+        CDN, Caching, Redis(rate limiting), Tan-Stack Query (client side cache)
+    - Maintainablity
+        Folder Structure
+    - Rendering strategy
+        Decide SSR, CSR, SSG
+    - State Management
+
+Q- How do you optimize React re-renders?
+    React.memo
+    useMemo, useCallback
+    Split Context API
+    State colocation
+    Virtualization for large list
+    useTransition - lets you mark updates as non-urgent so they don't block the UI
+
+Q- React 19
+    - React compiler - no need to write useMemo, useCallback
+    - Server components
+
+Q- React 18
+    - Concurrent Rendering
+        Before React 18, rendering was a single, uninterrupted, synchronous transaction and once rendering started, it couldn’t be interrupted
+        In React 18 with concurrent rendering, React can interrupt, pause, resume, or abandon a render. This allows React to respond to the
+        user interaction quickly even if it is in the middle of a heavy rendering task
+    - automatic Batching
+        React 18 automatically groups multiple state updates inside promises, timeouts, or native event handlers into a single re-render, reducing performance overhead
+    - useTransition
+         Allows developers to distinguish between urgent updates
+    - Suspense on the Server
+    - useLayoutEffect introudced in React16 -> 
+
+Q- NextJS new features
+    Next13
+        - App router introuced in next13
+        - optimised next/image, next/font, next/link
+    Next14
+        - Partial Pre-rendering
+        - Turbopack improvements
+        - Stable server actions
+    Next15
+        - Partial Pre-rendering stable
+        - React 19
+
+Q- What is memory leak
     
