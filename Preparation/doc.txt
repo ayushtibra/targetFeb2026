@@ -215,6 +215,17 @@ Q- React 18
         React 18 automatically groups multiple state updates inside promises, timeouts, or native event handlers into a single re-render, reducing performance overhead
     - useTransition
          Allows developers to distinguish between urgent updates
+            ✅ You own and control the state being updated
+            ✅ You want isPending to show explicit loading UI
+            ✅ Multiple state updates that should batch as non-urgent
+            ✅ Navigation between routes/tabs
+            ✅ Form submissions that trigger expensive re-renders
+    - useDeferredValue - A key detail with useDeferredValue is that it does nothing without useMemo — you have to memoize the expensive computation against the deferred value, otherwise the expensive work still runs on every render.
+            ✅ Value comes from props or external source
+            ✅ You can't access the setState call
+            ✅ Working with third-party components
+            ✅ Want to show stale content instead of spinner
+            ✅ Wrapping a child component you don't control
     - Suspense on the Server
     - useLayoutEffect introudced in React16 -> 
 
@@ -231,4 +242,48 @@ Q- NextJS new features
         - React 19
 
 Q- What is memory leak
+    A memoery which is allocated but Garbage collector can't collected it bevause someone still holds a reference to it.
+    In react it is, timers, eventListner, fetch call. we handled by cleanup func in  useEffect - AbortController for fetch, 
+    clearInterval, clearTimeout for timers, removeEventListner for events. and also use chrome dev tools to check 
+    heap snapshots.
+
+Q- what is garbage collector?
+    automatic memory management system that identify and free memory that is no longer needed.
+
+Q- Reduce bundle size  
+    - Tree shaking - use of import/export instad of require
+    - code splitting
+    - replace heavy libraries
+    - optimise image
+    - font optimise
+    - script
+    - gzip Compression
     
+Q- Explain CSR vs SSR vs SSG vs ISR with real use case
+    Static pages like blogs and marketing use SSG for maximum speed. Product pages that change occasionally use ISR so they stay
+    fresh without server cost on every request. Personalized or real-time pages use SSR. Highly interactive dashboards behind auth 
+    use CSR since SEO doesn't matter.
+    CSR - Dashboard, Cart etc.
+    SSR - SEO purpose page - Personalized pages (user-specific pricing, recommendations), search page
+    SSG - blog, static pages
+    ISR - product pages
+    PPR - 
+
+Q- useTransition and useDeferredValue
+    Both useTransition and useDeferredValue are React 18 concurrent features that mark updates as non-urgent so React can 
+    prioritize user interactions over expensive renders. The difference is where control lives. useTransition wraps the state 
+    setter — use it when you own the state and want an isPending flag to show explicit loading UI. useDeferredValue wraps the 
+    value — use it when the value comes from props or an external source you can't control, and you want to keep showing stale
+    content while the expensive render catches up. A key detail with useDeferredValue is that it does nothing without useMemo — 
+    you have to memoize the expensive computation against the deferred value, otherwise the expensive work still runs on every 
+    render. In practice I use useTransition for navigation and filter interactions where I control state, and useDeferredValue 
+    in child components that receive props from parents and need to defer expensive rendering independently.
+
+Q- Flexbox vs Grid
+    - Flexbox is one dimernsional and content driven layout (How much space does content need?)
+    - Grid is two dimernsional and layout driven layout (Put content into defined areas)
+
+Q- Rest vs GraphQL
+    Rest - Multiple endpoints, server decides what data you get
+    GraphQL - Single endpoint, client decides what data it needs ( solved - overfetching, underfetching, frontend/backend cordinations)
+

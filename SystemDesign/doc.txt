@@ -3,7 +3,7 @@ Before jumping into System design
 
 Steps
 1. Requirements
-2.  Core Entities
+2. Core Entities
 3. API
 4. High level design
 5. Deep Dive

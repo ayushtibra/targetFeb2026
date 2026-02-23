@@ -4,5 +4,7 @@
 - react 18 or 19 new features
 - next new features
 - useReducer?
-- Redux thunk and saga
-- microfrontend
+- Redux Toolkit patterns (slices, thunks, saga)
+- microfrontend (Micro-frontend architecture)
+- Component patterns: HOC, Render Props, Compound Components
+- 
