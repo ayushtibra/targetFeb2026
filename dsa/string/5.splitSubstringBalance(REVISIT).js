@@ -20,7 +20,7 @@ function balancedStringSplit(s){
             console.log('first')
         }
     }
-
+    console.log('count', count)
     return count;
 }
 

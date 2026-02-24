@@ -48,7 +48,7 @@ Q- What is an event loop?(while answers include macro and micro queue both).
 -------------------------------------------------------------------------------
 
 Q- What happens if key prop is missing in list?
-Keys provide identity to list elements, enabling efficient reconciliation and correct state preservation.
+    Keys provide identity to list elements, enabling efficient reconciliation and correct state preservation.
     Unnecessary re-renders, Incorrect DOM updates, UI Bugs - why - React’s reconciliation algorithm uses key to: which element change/add/removed.
 
     And what if we use index as key? what are problems?
@@ -287,3 +287,12 @@ Q- Rest vs GraphQL
     Rest - Multiple endpoints, server decides what data you get
     GraphQL - Single endpoint, client decides what data it needs ( solved - overfetching, underfetching, frontend/backend cordinations)
 
+Q- Approach architectural questions-
+    - Rendering Strategy in NextJS - ISR, CSR, SSR and then seo also
+    - CDN - for asset optimisation
+    - CMS - if any frequesnt content and changes req - Strapi
+    - StateManagement - for global use Redux and for local use Zustand or context api
+    - Feature first folder Structure
+    - Performance - Focus on core web vitals, code splitting
+    - API layer - Graphql,
+    - 

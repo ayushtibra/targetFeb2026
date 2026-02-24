@@ -12,7 +12,7 @@ function powerOfTwo(n){
     return true
 }
 
-const result = powerOfTwo(1);
+const result = powerOfTwo(16);
 console.log(result);
 
 // https://leetcode.com/problems/power-of-two/
