@@ -101,3 +101,126 @@ Yatra First round of Interview
 - leading
 
 -------------------------------------------------------------------------
+
+"A"+"B"
+"a"-"b"
+"a"*"b"
+
+// console.log(0.1 + 0.2 == 0.3);
+// console.log(0.1 + 0.2 === 0.3);
+
+// let a =0;
+// console.log(++a)
+
+// const [count, setCount] = useState(0);
+
+// useEffect(() => {
+//   console.log(count++);
+// }, [count]);
+
+// const [count, setCount] = useState(0);
+// useEffect(() => {
+//   console.log(++count);
+// }, [count]);
+ 
+ 
+// function Counter() {
+//   const [n, setN] = React.useState(0);
+//   return (
+// <button onClick={() => { setN(n + 1); setN(n + 1); }}>
+//       {n}
+// </button>
+// );
+// }
+
+// [8,1,24,8,99,38,1,2]
+// Asc
+// Des
+
+-------------------------------------------------------------------------
+
+complex task that you worked on
+inheritance in javascript
+types of inheritance
+unsorted array and give sum of pairs
+works or setup ci/cd pipeline
+daily schedule of work
+loop of 1 to 10
+
+-------------------------------------------------------------------------
+
+
+- If we have large list like if we search for new delhi to mumbai there are 1000 results are coming from api, we ant to do it in 
+  batches, is it possible in redux?
+  we show 5 resuls, can we without re-render do it with redux, subscribe?
+- Web socket?
+- multiple redux store can duable?
+- how many fibre tree needed, if we delete one row from the tree of 1000 rows.
+- How diffing algorith works?
+- how offline and online app works? git?
+- how many fibre tree are there?
+- time slicing
+- react works on virtual dom, what user see's virtual dom or real dom?
+- shoudyield
+- react scheduler
+- state management
+- react fibre
+
+-------------------------------------------------------------------------
+
+Valliance first round of Interview
+
+useEffect(() => {
+ console.log("Effect");
+});
+useEffect(() => {
+ console.log("Effect");
+}, []);
+useEffect(() => {
+ console.log("Effect");
+}, [count]);
+
+----
+
+useEffect(() => {
+ setCount(count + 1);
+}, [count]);
+
+- how do we handle asynchronous code in redux
+- we can pass function in dispatch via redux thunk and using useDispatch also? how it works?
+- middleware in redux
+- useSelector, useDispatch in redux
+- redux vs context api ( when to use which )
+- how to solve prop drilling? any other way except context api
+- temportal dead zone? how it works internally? execution context?
+- what is callback?
+- callback hell? what is issue if there are nested callback? how it do asynchronous task
+- what is asynchronous meant?
+- passed function as props, how to avoid re-render in child if parent component re-render
+- build a select dropdown of country, and if we select any country, it will show another dropdown with cities
+    https://codesandbox.io/p/sandbox/nqcn8r?file=%2Fsrc%2FApp.js
+- 
+
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1

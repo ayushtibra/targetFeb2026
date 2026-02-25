@@ -72,8 +72,8 @@ Q- What is Suspense?
     It improved performance and used with lazy loaded component. show fallback UI while waiting for lazy comp
 
 Q- useEffect vs useLayoutEffect?
-    useEffect runs after paint and non-blocking(asynchronous), used for api calls, timers, subscr.
-    wherease layout runs before paint and blocking, use only when we need to measure or mutate the dom synchronous.
+    useEffect runs after paint and it is non-blocking(asynchronous), used for api calls, timers, subscr.
+    wherease layout runs before paint and it is blocking, use only when we need to measure or mutate the dom synchronous.
     useEffect -> Render - Paint - useEffect
     useLayoutEffect -> Render - useLayoutEffect - Paint ( runs synchronous after react perform all dom mutate, but before browser paint)
 
@@ -121,11 +121,11 @@ Q- what is Server Components
     as it runs on server, we cant use useState..., browser apis
 
 Q- How To Enable & Maximize Tree Shaking
-Tree shaking reduces bundle size by eliminating dead code at build time.
-    Use Import/Export syntax, dont use require()
-    Use named exports over default exports:
-    Avoid importing entire libraries:
-    Use libraries that support tree shaking:
+    Tree shaking reduces bundle size by eliminating dead code at build time.
+        Use Import/Export syntax, dont use require()
+        Use named exports over default exports:
+        Avoid importing entire libraries:
+        Use libraries that support tree shaking:
 
 Q- How to design Scalable Frontend Architecture
     1. Architecture Approach - Use seperate module, for features like fight, hotel, payment
@@ -138,7 +138,7 @@ Q- How to design Scalable Frontend Architecture
 
 Q- Server side or client side, which to choose
     SSR — server does the heavy lifting, user gets content fast, but needs hydration to become interactive.
-    SSR- SEO better, user see content on first load
+    SSG- SEO better, user see content on first load
     CSR — browser does the heavy lifting, user waits longer initially, but gets a snappy app experience afterwards.
     CSR - user see blank screen, bad for seo on first load
     - After first load, CSR wins, as no server transition needed, page trans are faster
@@ -296,3 +296,4 @@ Q- Approach architectural questions-
     - Performance - Focus on core web vitals, code splitting
     - API layer - Graphql,
     - 
+

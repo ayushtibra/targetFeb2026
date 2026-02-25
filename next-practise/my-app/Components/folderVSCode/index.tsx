@@ -4,9 +4,9 @@ import Folders from './Folders';
 const folderStructure = [{
     id: 1,
     name: 'public',
-    isFolder : true,
-    children : []
-},{
+    isFolder: true,
+    children: []
+}, {
     id: 2,
     name: 'src',
     isFolder: true,
@@ -19,12 +19,12 @@ const folderStructure = [{
             name: 'data.json',
             isFolder: false
         }]
-    },{
+    }, {
         id: 4,
         name: 'index.html',
         isFolder: false
     }]
-},{
+}, {
     id: 5,
     name: 'package.json',
     isFolder: false
@@ -39,22 +39,23 @@ const FolderExplorer = () => {
     const handleFolderAdd = () => {
         const updateTree = (folders) => {
             return folders?.map((folder) => {
-                if(folder.id == active.activeId && folder?.isFolder){
+                if (folder.id == active.activeId && folder?.isFolder) {
                     return {
-                        ...folder, 
+                        ...folder,
                         children: [...folder.children, {
-                        id: Date.now(),
-                        name: 'Ayush',
-                        isFolder: true,
-                        children: []
-                    }]}
+                            id: Date.now(),
+                            name: 'Ayush',
+                            isFolder: true,
+                            children: []
+                        }]
+                    }
                 }
 
-               return {
-                        ...folder,
-                        children: updateTree(folder.children)
-                    }
-                
+                return {
+                    ...folder,
+                    children: updateTree(folder.children)
+                }
+
             })
         }
         setFilExplorer((prev) => updateTree(prev))
@@ -63,21 +64,22 @@ const FolderExplorer = () => {
     const handleFileAdd = () => {
         const updateTree = (folders) => {
             return folders?.map((folder) => {
-                if(folder.id == active.activeId){
+                if (folder.id == active.activeId) {
                     return {
-                        ...folder, 
+                        ...folder,
                         children: [...folder.children, {
-                        id: Date.now(),
-                        name: 'deepika.ts',
-                        isFolder: false
-                    }]}
+                            id: Date.now(),
+                            name: 'deepika.ts',
+                            isFolder: false
+                        }]
+                    }
                 }
 
-               return {
-                        ...folder,
-                        children: updateTree(folder.children)
-                    }
-                
+                return {
+                    ...folder,
+                    children: updateTree(folder.children)
+                }
+
             })
         }
         setFilExplorer((prev) => updateTree(prev))
