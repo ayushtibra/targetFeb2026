@@ -5,6 +5,6 @@
 - next new features
 - useReducer?
 - Redux Toolkit patterns (slices, thunks, saga)
-- microfrontend (Micro-frontend architecture), Micro-Frontend Question
+- microfrontend (Micro-frontend architecture), Micro-Frontend Question,  Micro frontend architecture
 - Component patterns: HOC, Render Props, Compound Components
 - 
