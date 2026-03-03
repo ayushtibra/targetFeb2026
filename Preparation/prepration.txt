@@ -297,3 +297,64 @@ Q- Approach architectural questions-
     - API layer - Graphql,
     - 
 
+Q- Call, bind and apply
+    All are used to set "this" for a function, difference is how you pass argument and when the function execeutes.
+
+    - Call - function execeute immediately, arguments passes one by one.
+    - apply - function execeute immediately, arguments passes as an array.
+    - bind - function does not execeute immediately, it returns a function with this permanentyl bounded. arguments passes one by one.
+
+    function introduce(greeting, age, city) {
+        console.log(`${greeting}! I'm ${this.name}, ${age} years old from ${city}`);
+    }
+
+    const person = { name: 'Alice' };
+
+    // call - args one by one
+    introduce.call(person, 'Hello', 25, 'NYC');
+    // "Hello! I'm Alice, 25 years old from NYC"
+
+    // apply - args as array
+    introduce.apply(person, ['Hi', 25, 'NYC']);
+    // "Hi! I'm Alice, 25 years old from NYC"
+
+    // bind - returns new function, can split args
+    const boundFn = introduce.bind(person, 'Hey'); // pre-fill greeting
+    boundFn(25, 'NYC');                             // pass rest later
+    // "Hey! I'm Alice, 25 years old from NYC"
+
+Q- Stale Closures
+    A stale closure is when a function "remembers" an old value of a variable from when it was created, even though the 
+    variable has since updated.
+    Ex- in react and js  - count in setInterval
+
+Q- Aria-label
+    It is an accessiblity attribute that provides description for screen readers
+
+Q- manifest in html
+
+Q- Web workers
+    Web Workers let you run JavaScript in a background thread, separate from the main UI thread — preventing heavy tasks
+    from freezing the UI
+    check example how to do it
+
+Q- What is callback? 
+    A callback is a function passed as an argument to another function, to be called later.
+    Not all callback are asynchronous.
+    ex - [1,2,3].forEach(num => console.log(num)); // callback runs sync
+    setTimeout(() => console.log('later'), 1000); // callback runs async
+
+Q- callback hell? how it leads to solve promise?
+    When you have nested callbacks inside callbacks creating a deeply indented, hard to read "pyramid of doom"
+
+Q- is JavaScript synchronous or asynchronous?
+    JavaScript is fundamentally synchronous and single-threaded, but it is able to handle asynchronous operations through
+    mechanisms provided by its runtime environment (like the browser or Node.js).
+    To avoid blocking the main thread during long-running tasks like network requests (fetching data from an API), file
+    operations, or timers, the JavaScript runtime environment steps in. These environments provide Web APIs (in the browser)
+    or Node APIs (in Node.js) that handle these tasks in the background, off the main.
+
+Q- React run in two phase
+    Render phase - React renders components from parent → child:
+    Commit phase - After React paints the DOM, effects run from child → parent
+

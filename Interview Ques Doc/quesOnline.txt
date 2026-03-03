@@ -413,3 +413,45 @@ The below playlists will help you in your preparation:
  - https://lnkd.in/d4Kn_AzZ
 
  ---------------------------------------------------------------
+
+𝗥𝗼𝘂𝗶𝗻𝗱 𝟭: 𝗢𝗻𝗹𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 (90 mins)
+ - Build a function to prevent multiple rapid API calls (e.g., OTP send)
+ - Handle retries on network failure
+ - Follow-up 
+ - Client-side vs server-side rate limiting
+ - Given credit/debit transactions, find final balance in O(n)
+ - Detect if balance ever goes negative
+ - Follow-up 
+ - What if transactions come as a stream
+
+𝗥𝗼𝘂𝗻𝗱 𝟮: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 
+ - Build a reusable payment status tracker component (for UPI/Card payments).
+ - Show real-time status updates (Pending, Success, Failed).
+ - Handle retries, timeouts, and network errors.
+ - Follow-ups:
+ - Polling vs WebSockets for real-time updates.
+ - Exponential backoff for retrying failed status checks.
+ - Handling app background/foreground transitions.
+ - Accessibility support (live region announcements, focus management).
+
+𝗥𝗼𝘂𝗻𝗱 𝟯: 𝗗𝗲𝗲𝗽 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 
+ - Build an infinite scroll list for transactions / activity feed.
+ - Load more data using IntersectionObserver.
+ - Show skeleton loaders while fetching.
+ - Follow-ups:
+ - How React reconciliation works (keys, O(n) diffing).
+ - What Fiber changes internally (pausable work for smoother UI).
+ - React 18 concurrent features and time slicing.
+ - Common performance bugs (useEffect dependency loops).
+ - Optimizing 10k+ rows (react-window / virtualization).
+ - Preventing unnecessary re-renders (memo, useCallback).
+ - Profiling with React DevTools Profiler (flamegraph).
+
+𝗥𝗼𝘂𝗻𝗱 𝟰: 𝗛𝗶𝗿𝗶𝗻𝗴 𝗠𝗮𝗻𝗮𝗴𝗲𝗿
+ - "Describe a situation where you took ownership despite external dependencies (e.g., API delays)."
+ - "How do you ensure code quality and reliability in fast-moving teams?"
+ - "Tell me about a time you mentored a junior engineer and the impact it had.
+
+ ---------------------------------------------------------------
+
+ 
