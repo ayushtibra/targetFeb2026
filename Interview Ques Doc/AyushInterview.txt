@@ -144,7 +144,7 @@ Yatra second round of Interview - 24th feb
 
 - If we have large list like if we search for new delhi to mumbai there are 1000 results are coming from api, we ant to do it in 
   batches, is it possible in redux?
-  we show 5 resuls, can we without re-render do it with redux, subscribe?
+  we show 5 resuls, can we without re-render? do it with redux without re-render, subscribe?
 - Web socket? how it works? what is webscoket? example
 - multiple redux store can duable?
 - how many fibre tree needed, if we delete one row from the tree of 1000 rows.
@@ -155,6 +155,7 @@ Yatra second round of Interview - 24th feb
 - shoudyield
 - react scheduler
 - react diffing algorith works?
+- how virtualization works? how intersection observor works?
 - state management
 - react fibre and its significance
 
@@ -162,40 +163,75 @@ Yatra second round of Interview - 24th feb
 
 lodhagroup / Bellavie firsr round of Interview - 24th feb
 
-- count assignment react
+- count assignment react - state lift from child, key concept - check test assignment on system
 
 -------------------------------------------------------------------------
 
-altimetrik first round of Interview
+altimetrik first round of Interview - 25th feb
+
+- what is hoisting and how hoisting works?
+- execution context?
+- example of closure in real application that you faced
+- what is stale closure?
+- what is memory leakage? how it happens? how can we resolve
+- what are es6 features?
+- classes in javascript
+- what is arrow function? and why it is ingtroduced? how it is difference from normal?
+- How react works? how it starts
+- what is singelton patterns
+- what introduced in react 18 nad 19
+- what is concurrent rendering
+- setter function?
+- useState is synchronous or asynchronous? how it works?
+- important rules of hooks
+- what is lifting the state up? ways to do it
+- component composition
+- useRef vs useState
+- why useRef not changes when re-redner happens? 
+- what is rendering and re-rendering means
+- useEffect vs useLayoutEffect
+- what is generics
+- interfaces vs types
+- utility types
+- why do we use TypeScript? benefits
+- 
 
 -------------------------------------------------------------------------
 
-kubigo first round of Interview
+kubigo first round of Interview - 25th feb
+
+- General discussion
+- if there is one application whuch is using 4 backend url, how can you deploy it as you need to change backend url
+in your api calls in useEffect. How to achieve this
+- there are two ways to deploy - either we can copy paste the files into /dist or we can run commoans like npm run build and then start on server
+- why next, everybody is moving to turbopack instead of webpack?
+- how you and backend team handle things?
 
 -------------------------------------------------------------------------
 
-olx first round of Interview
+olx first round of Interview - 25th feb
+
+- General discussion
 
 -------------------------------------------------------------------------
 
+Valliance first round of Interview - 25th feb
 
-Valliance first round of Interview
+- Outpput 
+    useEffect(() => {
+    console.log("Effect");
+    });
+    useEffect(() => {
+    console.log("Effect");
+    }, []);
+    useEffect(() => {
+    console.log("Effect");
+    }, [count]);
 
-useEffect(() => {
- console.log("Effect");
-});
-useEffect(() => {
- console.log("Effect");
-}, []);
-useEffect(() => {
- console.log("Effect");
-}, [count]);
-
-----
-
-useEffect(() => {
- setCount(count + 1);
-}, [count]);
+- Problem in this code
+    useEffect(() => {
+    setCount(count + 1);
+    }, [count]);
 
 - how do we handle asynchronous code in redux
 - we can pass function in dispatch via redux thunk and using useDispatch also? how it works?
@@ -210,67 +246,67 @@ useEffect(() => {
 - passed function as props, how to avoid re-render in child if parent component re-render
 - build a select dropdown of country, and if we select any country, it will show another dropdown with cities
     https://codesandbox.io/p/sandbox/nqcn8r?file=%2Fsrc%2FApp.js
-- 
+- is callback sync or asynchronous
 
 -------------------------------------------------------------------------
 
-<div>
- <div></div>
-<div></div>
-<div></div>
-<div></div>
-</div>
- 
-:has()
- 
-for (var i = 0; i < 3; i++) {
-  setTimeout(() => console.log(i), 1000);
-}
- 
-2
-2
-2
- 
-3
-3
-3
- 
-sayHello(); 
-var sayHello = function() {
-    console.log("Hello!");
-};
- 
-Hello!
- 
-console.log("A");
-setTimeout(() => console.log("B"), 0);
-Promise.resolve().then(() => console.log("C"));
-console.log("D");
- 
-A
-D
-C
-B
- 
-console.log(null == undefined);
- 
-False
- 
-countChar('GeeksForGeeks', 'G');
- 
-const [items, setItems] = useState([]);
-const refresh = async () => {
-    const res = await fetch('callToAPIEndpoint');
-    const data = await res.json();
-    setItems([...items, ...res]);
-}
-useEffect(() => {
-   // call refresh method here 
-   refresh();
-}, [refresh])
- 
+altimetrik Second round - 26th feb
 
+- child div should places like top left, top roght, bottom left and bottom right
+  how to place them using css?
+    <div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    </div>
 
+- manifest in HTML
+- web workers in html
+- Semantic tags in html
+- aria labels 
+
+- how would you pick div inside a div.
+    :has()
+    nth-child
+
+- what call bind and apply ( immediate call the function = call func?)
+- bind and call difference
+- apply method definition create or polyfill
+    use bind to create apply
+
+- Outpput
+    for (var i = 0; i < 3; i++) {
+    setTimeout(() => console.log(i), 1000);
+    }
+    
+    sayHello(); 
+    var sayHello = function() {
+        console.log("Hello!");
+    };
+    
+    Hello!
+ 
+    console.log("A");
+    setTimeout(() => console.log("B"), 0);
+    Promise.resolve().then(() => console.log("C"));
+    console.log("D");
+
+ 
+    console.log(null == undefined);
+  
+- How many closures are there
+    const [items, setItems] = useState([]);
+    const refresh = async () => {
+        const res = await fetch('callToAPIEndpoint');
+        const data = await res.json();
+        setItems([...items, ...res]);
+    }
+    useEffect(() => {
+    // call refresh method here 
+    refresh();
+    }, [refresh])
+ 
 
 // function countChar(str, targetStr){
 //     // const hashMap = {};
@@ -296,102 +332,237 @@ useEffect(() => {
 // const result = countChar('GeeksForGeeks', 'G');
 // console.log(result);
 
+- Problem in this code
+    // const [items, setItems] = useState([]);
 
-// const [items, setItems] = useState([]);
-
-// const refresh = useCallback(async () => {
-//     const res = await fetch('callToAPIEndpoint');
-//     const data = await res.json();
-//     setItems((prev) => [...prev, ...data]);
-// },[setItems])
-
-
-// useEffect(() => {
-//   // call refresh method here 
-//   refresh();
-// }, [refresh])
+    // const refresh = useCallback(async () => {
+    //     const res = await fetch('callToAPIEndpoint');
+    //     const data = await res.json();
+    //     setItems((prev) => [...prev, ...data]); // setItems([...items,...data])
+    // },[setItems]) // [items, setItems] 
 
 
-// Prototype chaining 
+    // useEffect(() => {
+    //   // call refresh method here 
+    //   refresh();
+    // }, [refresh])
+
+- Prototype chaining 
+- when we build the react application? what will happen? (when we run npm run build - what will happen)
 
 -----------------------------------------------------------------------------
 
-Given an array of words arr[], the task is to groups strings that are anagrams. An anagram is a word or phrase formed by rearranging the letters of another, using all the original letters exactly once.
+- Given an array of words arr[], the task is to groups strings that are anagrams. An anagram is a word or phrase formed by rearranging the letters of another, using all the original letters exactly once.
  
-Input: arr[] = ["act", "god", "cat", "dog", "tac"]
-Output: [["act", "cat", "tac"], ["god", "dog"]]
-Explanation: There are 2 groups of anagrams "god", "dog" make group 1. "act", "cat", "tac" make group 2.
-Input: arr[] = ["listen", "silent", "enlist", "abc", "cab", "bac", "rat", "tar", "art"]
-Output: [["abc", "cab", "bac"], ["listen", "silent", "enlist"],["rat", "tar", "art"]]
-Explanation: 
-Group 1: "abc", "bac" and "cab" are anagrams.
-Group 2: "listen", "silent" and "enlist" are anagrams.
-Group 3: "rat", "tar" and "art" are anagrams.
+    Input: arr[] = ["act", "god", "cat", "dog", "tac"]
+    Output: [["act", "cat", "tac"], ["god", "dog"]]
+    Explanation: There are 2 groups of anagrams "god", "dog" make group 1. "act", "cat", "tac" make group 2.
+    Input: arr[] = ["listen", "silent", "enlist", "abc", "cab", "bac", "rat", "tar", "art"]
+    Output: [["abc", "cab", "bac"], ["listen", "silent", "enlist"],["rat", "tar", "art"]]
+    Explanation: 
+    Group 1: "abc", "bac" and "cab" are anagrams.
+    Group 2: "listen", "silent" and "enlist" are anagrams.
+    Group 3: "rat", "tar" and "art" are anagrams.
 
-import { useEffect, useState } from "react";
-import "./styles.css";
+- Build a timer starts from 0, there are three button to start, stop and Reset! Post that it automatically stops at 10 sec and 
+if we can click on start it resumes from 10 now.
 
-export default function App() {
-  const [seconds, setSeconds] = useState(0);
-  const [timerStart, setTimerStart] = useState(false);
+    import { useEffect, useState } from "react";
+    import "./styles.css";
 
-  useEffect(() => {
-    let timer;
-    if (timerStart) {
-      timer = setInterval(() => {
-        setSeconds((prev) => {
-          // if (prev == 10) {
-          //   setTimerStart(false);
-          //   return prev;
-          // }
-          return prev + 1;
-        });
-      }, 1000);
-    }
+    export default function App() {
+    const [seconds, setSeconds] = useState(0);
+    const [timerStart, setTimerStart] = useState(false);
 
-    return () => {
-      clearInterval(timer);
+    useEffect(() => {
+        let timer;
+        if (timerStart) {
+        timer = setInterval(() => {
+            setSeconds((prev) => {
+            // if (prev == 10) {
+            //   setTimerStart(false);
+            //   return prev;
+            // }
+            return prev + 1;
+            });
+        }, 1000);
+        }
+
+        return () => {
+        clearInterval(timer);
+        };
+    }, [timerStart]);
+
+    useEffect(() => {
+        if (seconds == 10) {
+        setTimerStart(false);
+        }
+    }, [seconds]);
+
+    const handleStart = () => {
+        setTimerStart(true);
     };
-  }, [timerStart]);
 
-  useEffect(() => {
-    if (seconds == 10) {
-      setTimerStart(false);
+    const handleStop = () => {
+        setTimerStart(false);
+    };
+
+    const handleReset = () => {
+        setTimerStart(false);
+        setSeconds(0);
+    };
+
+    return (
+        <div className="App">
+        {/* <h1>Hello CodeSandbox</h1> */}
+        <h2>Timer</h2>
+        <p>Seconds: {seconds}</p>
+        <div>
+            <button onClick={handleStart}>Start</button>
+            <button onClick={handleStop}>Stop</button>
+            <button onClick={handleReset}>Reset</button>
+        </div>
+        </div>
+    );
     }
-  }, [seconds]);
-
-  const handleStart = () => {
-    setTimerStart(true);
-  };
-
-  const handleStop = () => {
-    setTimerStart(false);
-  };
-
-  const handleReset = () => {
-    setTimerStart(false);
-    setSeconds(0);
-  };
-
-  return (
-    <div className="App">
-      {/* <h1>Hello CodeSandbox</h1> */}
-      <h2>Timer</h2>
-      <p>Seconds: {seconds}</p>
-      <div>
-        <button onClick={handleStart}>Start</button>
-        <button onClick={handleStop}>Stop</button>
-        <button onClick={handleReset}>Reset</button>
-      </div>
-    </div>
-  );
-}
 
 -----------------------------------------------------------------------------
 
+console.log('1'); 
+fetch('/api/data') .then(res => res.json()) .then(data => console.log('2', data)); 
+console.log('3');
+
+console.log('1'); 
+const data = await fetch('/api/data');
+const result = await data.json();
+console.log('2',result);
+console.log('3');
+
+output of both
+- 1,3,2
+- 1,2,3
+
+-----------------------------------------------------------------------------
+
+Tata digital 1st round
+
+- where is caching applicable? redis on client side not possible? where is redis?
+- two api call = one to cms and then magento - going to origin server ?
+- Cache busting
+- how do you identify memory leak?
+- abort is default in fetch, what other methods are default that are used in helping us?
+- network interxeptor? 
+- setting token in localStograge is right? how to solve this?
+- how do you render large list in react? without pagination
+- virtualization impacts seo? how do you solve?
+- can we use web socket or server? 
+- what is closureS?
+- what is closures in react?
+- useState vs useReducer
+- useDispatch
+- custom hook for api fetch call
+
+-----------------------------------------------------------------------------
+
+Max IQ  1st round
+
+- flatten array using depth
+- Output
+
+    function Child() {
+    React.useEffect(() => {
+        console.log("Child effect");
+    });
+    return <div>Child</div>;
+    }
+
+    function Parent() {
+    React.useEffect(() => {
+        console.log("Parent effect");
+    });
+    return <Child />;
+    }
+
+    const App = () => {
+    return <Parent/>
+    } 
+
+- Two context and which re-render issue - https://medium.com/@thebishalniroula/the-problem-with-context-api-and-how-to-solve-it-with-children-fc41eab9925f
+
+        import { createContext, useContext, useState } from "react";
+
+        const ThemeContext = createContext();
+        const UserContext = createContext();
+
+        export const Child1 = () => {
+        const user = useContext(ThemeContext);
+
+        return <div>Ayush</div>;
+        };
+
+        export const Child2 = () => {
+        const user = useContext(UserContext);
+
+        return <div>Tibra</div>;
+        };
+
+        export default function App() {
+        const [theme, setTheme] = useState("white");
+        const [user, setUser] = useState("ayush");
+
+        return (
+            <ThemeContext.Provider value={{ theme, setTheme }}>
+            <Child1 />
+            <UserContext.Provider value={{ user, setUser }}>
+                <Child2 />
+            </UserContext.Provider>
+            </ThemeContext.Provider>
+        );
+        }
+
+- issue with this code
+
+    export default function App() {
+        const [theme, setTheme] = useState("white");
+        const [count, setCount] = useState(0);
+
+        useEffect(() => {
+            setInterval(() => {
+            console.log(count);
+            }, 1000);
+        }, []);
+
+        return (
+            <div>Ayush</div>
+        );
+    }
 
 
+button onclick - memo and useCallback
 
+- button set state - two update
+    export default function App() {
+        const [theme, setTheme] = useState("white");
+        const [count, setCount] = useState(0);
+
+        function handleClick() {
+            setCount(count + 1);
+        }
+
+        return (
+            <div>
+            {count}
+            <button onClick={() => setCount(count + 1)}>Hi</button>
+            <button onClick={handleClick}>bye</button>
+            </div>
+        );
+    }
+
+- 
+
+-----------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
 
 
 
