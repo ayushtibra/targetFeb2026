@@ -454,4 +454,177 @@ The below playlists will help you in your preparation:
 
  ---------------------------------------------------------------
 
- 
+ 𝟭. 𝗨𝗽𝗱𝗮𝘁𝗲 𝗟𝗶𝗻𝗸𝗲𝗱𝗜𝗻 ‘𝗢𝗽𝗲𝗻 𝗧𝗼 𝗪𝗼𝗿𝗸’ 𝗦𝗲𝘁𝘁𝗶𝗻𝗴: 
+ - Use a generic title (Software Developer) and a role-specific title (JavaScript Developer). 
+ - Select all location types and tech hubs in India. 
+ - Update your current location to Bangalore, Hyderabad, or Noida, as most companies hire from these locations.
+
+𝟮. 𝗖𝗼𝗹𝗱 𝗗𝗠 𝗼𝗿 𝗘𝗺𝗮𝗶𝗹 𝗦𝘁𝗮𝗿𝘁𝘂𝗽 𝗙𝗼𝘂𝗻𝗱𝗲𝗿𝘀: 
+ - Go to GeekWire or Product Hunt and reach out to founders, directors, CEOs, or CTOs who have recently raised funds. 
+ - GeekWire: https://lnkd.in/d7n2XCFA
+ - YC Startups Directory: https://lnkd.in/dPQMnud2
+ - Product Hunt: https://lnkd.in/dYvxbbW3
+ - Use this template: https://lnkd.in/dJYUuMtZ
+
+𝟯. 𝗦𝗸𝗶𝗹𝗹 𝗘𝗻𝗵𝗮𝗻𝗰𝗲𝗺𝗲𝗻𝘁 𝗮𝗻𝗱 𝗖𝗲𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝘁𝗶𝗼𝗻: 
+ - Enhance in-demand skills through courses, certifications, and projects to make your profile stand out to employers.
+ - YouTube channel you must subscribe to: 
+ - Akshay Saini 🚀: https://lnkd.in/d5gEv4er
+ - Piyush Agarwal: https://lnkd.in/d-zFpJpf
+ - Shrayansh Jain: https://lnkd.in/dUABhnbT
+ - Gaurav Sen: https://lnkd.in/dAPhQyBp
+ - Free 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 courses: https://lnkd.in/dGZcVyU2
+ - Free 𝗥𝗲𝗮𝗰𝘁 courses: https://lnkd.in/dg46h5Ns
+ - SQL: https://lnkd.in/dG-BB5A9
+ - Python: https://lnkd.in/dt_-2-Uj
+
+𝟰. 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽𝘀: 
+ - Aryan Raskar: https://lnkd.in/dKdTjvzc
+ - Rajat Gajbhiye: https://lnkd.in/d4Ht9Ggj
+ - Palak Awasthi: https://lnkd.in/dkhS8F8x
+ - Saumya Singh: https://lnkd.in/dj2u9QeS
+ - Saumya Awasthi: https://lnkd.in/gPziwfWh
+
+𝟱. 𝗔𝗽𝗽𝗹𝘆 𝗗𝗶𝗿𝗲𝗰𝘁𝗹𝘆 𝗼𝗻 𝗖𝗮𝗿𝗲𝗲𝗿 𝗣𝗼𝗿𝘁𝗮𝗹𝘀: 
+ - Visit the career portals of companies you want to work for and apply to 10-15 recent openings where you’re eligible. 
+ - Expand your scope beyond MAANG companies. 
+ - https://lnkd.in/dHk7pi3B
+ - LinkedIn and Naukri tricks to get more interview calls: https://lnkd.in/dzTp4Zdq
+
+𝟲. 𝗔𝘀𝗸 𝗳𝗼𝗿 𝗥𝗲𝗳𝗲𝗿𝗿𝗮𝗹𝘀:
+When you request a referral, please ensure that the person explicitly passes your resume on to the hiring manager.
+- Referrals template: https://lnkd.in/dJYUuMtZ
+
+𝟳. 𝗣𝗿𝗲𝗽𝗮𝗿𝗲 𝗳𝗼𝗿 𝘁𝗵𝗲 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄𝘀 𝘄𝗶𝘁𝗵 𝘁𝗵𝗶𝘀 𝗞𝗜𝗧:
+ - https://lnkd.in/d8vBd3_j
+
+ ---------------------------------------------------------------
+
+ 𝗦𝘁𝗲𝗽 𝟭: 𝗙𝘂𝗻𝗱𝗮𝗺𝗲𝗻𝘁𝗮𝗹𝘀
+ - Browser Rendering (Critical Path, Reflow/Repaint)
+ - JavaScript Runtime (Event Loop, Microtasks)
+ - Performance Basics (Web Vitals, Bundle Size)
+ - State Management Patterns (Local vs Global)
+
+𝗦𝘁𝗲𝗽 𝟮: 𝗨𝗜/𝗨𝗫 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀
+ - Component Architecture (Composition, Reusability)
+ - Responsive Design (Mobile-First, Breakpoints)
+ - Accessibility (ARIA, Keyboard Navigation)
+ - Dark Mode & Theming Systems
+
+𝗦𝘁𝗲𝗽 𝟯: 𝗦𝗰𝗮𝗹𝗮𝗯𝗶𝗹𝗶𝘁𝘆 & 𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲
+ - Virtualization for Long Lists
+ - Code Splitting & Lazy Loading
+ - Memoization (useMemo, React.memo)
+ - Real-time Updates (WebSockets, SSE)
+
+𝗦𝘁𝗲𝗽 𝟰: 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗣𝗮𝘁𝘁𝗲𝗿𝗻𝘀
+ - Design Systems & Component Libraries
+ - Micro-Frontends vs Monolith
+ - SSR vs CSR vs SSG (Next.js patterns)
+ - State Normalization & Caching
+
+𝗦𝘁𝗲𝗽 𝟱: 𝗛𝗮𝗻𝗱𝘀-𝗼𝗻 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗲
+ - Design real-world UIs (News Feed, Checkout)
+ - Ask clarifying questions (constraints, scale)
+ - Practice machine coding (Todo, Kanban)
+ - Mock frontend system design interviews
+
+➤ 𝗛𝗲𝗿𝗲 𝗮𝗿𝗲 𝘀𝗼𝗺𝗲 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀 𝘁𝗼 𝗳𝗼𝗹𝗹𝗼𝘄:
+ 1. RoadsideCoder: https://lnkd.in/dqX_4SPi
+ 2. TheSeniorDev: https://lnkd.in/dhGc-gRs)
+ 3. Web Dev Simplified: https://lnkd.in/daXvFjtT)
+ 4. Fireship: https://lnkd.in/dWcGjpJB
+
+𝗞𝗲𝗲𝗽𝗶𝗻𝗴 𝘁𝗵𝗶𝘀 𝗶𝗻 𝗺𝗶𝗻𝗱, 𝗜’𝘃𝗲 𝗽𝗿𝗲𝗽𝗮𝗿𝗲𝗱 𝗮 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗣𝗹𝗮𝘆𝗯𝗼𝗼𝗸
+
+𝗚𝗲𝘁 𝘁𝗵𝗲 𝗣𝗹𝗮𝘆𝗯𝗼𝗼𝗸 𝗵𝗲𝗿𝗲: https://lnkd.in/d8vBd3_j
+
+---------------------------------------------------------------
+
+From what I’ve seen, most rejections happen in Machine Coding and Frontend System Design rounds.
+
+Here’s what gets asked and where to prepare.
+
+𝗠𝗼𝘀𝘁 𝘁𝗲𝘀𝘁𝗲𝗱 𝗮𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗨𝗜 𝗯𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝘀
+- Modal
+- Drag & Drop
+- Progress Bar
+- Star Rating
+- Image Carousel
+- Tabs
+- Accordion
+
+𝗠𝗼𝘀𝘁 𝗮𝘀𝗸𝗲𝗱 𝗺𝗶𝗻𝗶 𝗮𝗽𝗽 𝗯𝘂𝗶𝗹𝗱𝘀
+- Search with Debounce + API
+- To-Do App (add/edit/delete, filters)
+- Infinite Scroll List
+- Stopwatch / Timer
+- Shopping Cart UI
+- File Explorer UI
+- Weather Dashboard
+
+𝗠𝗼𝘀𝘁 𝘁𝗲𝘀𝘁𝗲𝗱 𝗮𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗨𝗜 𝗯𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝘀
+- Multi-step form with validation
+- Virtualized lists
+- Form builder
+- Dark mode + theming
+- Responsive Drawer/Sidebar
+- Skeleton Loading States
+
+𝗠𝗼𝘀𝘁 𝘁𝗲𝘀𝘁𝗲𝗱 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝘁𝗼𝗽𝗶𝗰𝘀
+- State management layers
+- Large scale React app structure
+- Code splitting
+- Routing strategy
+- Micro-frontends
+- Design Systems / Component Libraries
+
+𝗠𝗼𝘀𝘁 𝘁𝗲𝘀𝘁𝗲𝗱 𝗽𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲 𝘁𝗼𝗽𝗶𝗰𝘀
+- Virtualization
+- Re-renders
+- Memoization
+- CDN + asset optimization
+- Lighthouse Optimization
+- Bundle Analysis + Tree Shaking
+
+---------------------------------------------------------------
+
+𝗪𝗲𝗲𝗸𝗹𝘆 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗣𝗿𝗲𝗽𝗮𝗿𝗮𝘁𝗶𝗼𝗻 𝗥𝗼𝘁𝗮𝘁𝗶𝗼𝗻 𝗦𝘁𝗿𝗮𝘁𝗲𝗴𝘆 (𝗨𝘀𝗲𝗱 𝗯𝘆 𝗧𝗼𝗽 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝘀)
+
+𝗗𝗮𝘆 𝟭: 𝗣𝗿𝗼𝗯𝗹𝗲𝗺 𝗦𝗼𝗹𝘃𝗶𝗻𝗴 (𝗔𝗻𝘆 𝗗𝗶𝗳𝗳𝗶𝗰𝘂𝗹𝘁𝘆)
+- Solve 1–2 Programming questions focused on logic, algorithms, or data structures.
+- 𝗥𝗲𝗰𝗼𝗺𝗺𝗲𝗻𝗱𝗲𝗱 𝗿𝗲𝘀𝗼𝘂𝗿𝗰𝗲: https://lnkd.in/da4DDaQ5
+
+𝗗𝗮𝘆 𝟮: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗙𝘂𝗻𝗱𝗮𝗺𝗲𝗻𝘁𝗮𝗹𝘀
+- Practice Quiz questions across JavaScript fundamentals, async JavaScript, DOM, and browser APIs.
+
+You can use this day to study frontend concepts using resources like MDN, javascript info.
+
+𝗗𝗮𝘆 𝟯: 𝗨𝗜 𝗕𝘂𝗶𝗹𝗱𝗶𝗻𝗴 (𝗔𝗻𝘆 𝗗𝗶𝗳𝗳𝗶𝗰𝘂𝗹𝘁𝘆)
+- Solve 1 UI-focused Programming (Machine Coding) question.
+- 𝗣𝗿𝗮𝗰𝘁𝗶𝗰𝗲 𝗵𝗲𝗿𝗲: https://lnkd.in/dkMwGgZ9
+
+𝗗𝗮𝘆 𝟰: 𝗔𝗹𝗴𝗼𝗿𝗶𝘁𝗵𝗺𝘀 & 𝗗𝗮𝘁𝗮 𝗦𝘁𝗿𝘂𝗰𝘁𝘂𝗿𝗲𝘀
+- Solve problem-solving questions tagged under algorithms and data structures. You can use this day to practice easy/medium level Leetcode questions.
+
+𝗗𝗮𝘆 𝟱: 𝗥𝗲𝗶𝗻𝗳𝗼𝗿𝗰𝗲𝗺𝗲𝗻𝘁 𝗗𝗮𝘆
+- Revisit weaker areas identified during the week:
+- Re-solve a previously attempted Programming question, or
+- Study frontend concepts
+
+𝗗𝗮𝘆 𝟲: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻
+
+Prepare using our guide. Learn from live examples that we have shared like Google Calendar, WhatsApp Web UI, Autocomplete, or concepts.
+
+Focus on requirements gathering, data entities, API contracts, optimisations, and scalability.
+
+You can use this day to visit different web systems like Flipkart’s listing page, follow the framework mentioned in our guide to answer the question - “If I have to build this, then how would I approach it?”
+
+Guide that helped me: https://lnkd.in/df8XpdUX
+
+𝗗𝗮𝘆 𝟳: 𝗥𝗲𝘀𝘁 𝗼𝗿 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗪𝗼𝗿𝗸
+- Take a break, or focus on building a side project.
+
+---------------------------------------------------------------
+

@@ -120,6 +120,18 @@ Q- what is Server Components
     Server components improve performance by reducing client-side JavaScript.
     as it runs on server, we cant use useState..., browser apis
 
+Q- Server vs client
+    Server
+        Render only on the server — their code never ships to the client bundle
+        Can async/await directly, query databases, read secrets
+        Cannot use browser APIs, event handlers, or stateful hooks
+    Client
+        Render on the clien
+        Must add "use client" directive at the top
+    Server Components can import and render Client Components — but not the reverse.
+    You can pass Server Components as children/props into Client Components though:
+
+
 Q- How To Enable & Maximize Tree Shaking
     Tree shaking reduces bundle size by eliminating dead code at build time.
         Use Import/Export syntax, dont use require()
@@ -358,3 +370,167 @@ Q- React run in two phase
     Render phase - React renders components from parent → child:
     Commit phase - After React paints the DOM, effects run from child → parent
 
+Q- What are the key differences between App Router and Pages Router in Next.js?
+    In Pages Router, routing is purely file-based and layouts must be manually wrapped inside each page. In App Router,
+    routing is based on nested route segments and layouts are built into the filesystem, allowing persistent nested layouts
+    that do not re-render during navigation.
+    Date Fetching different getServerSideProp in pages and we can fetch directly in app
+    Component is client in pages and server by default in app router
+
+Q- What is a Server Component in Next.js?
+    runs only on server, no JS send to client, sends HTML + RSC payload to the client, can directly call DB, API calls, Improve performance
+
+Q- When do we use "use client"
+    if component needs useState, useEffect, browser API, event handlers
+    Once you mark a component "use client", all its children become client components.
+
+Q- How does data fetching work in App Router?
+    Using fetch directly
+    fetch is cached by default, means Next.js treats this like Static Site Generation (SSG) - data fetched once, stored in cache, and reused for every request
+    Now even if supporse product 100 is cached, and if product changes to 105, it is still cached.
+
+    How to make above dynamic?
+        Method 1 — cache: "no-store"
+        similar to getServerSideProps - data fetched every request
+        This disables caching only for that specific fetch request.
+        Ex - 
+        await fetch("https://api.com/products", {
+            cache: "no-store",
+        })
+         await fetch("https://api.com/orders")
+
+        Method 2 — force-dynamic
+        export const dynamic = "force-dynamic"  
+        This disables caching for the entire route/page. 
+        Ex - 
+        export default async function Page() {
+        const res = await fetch("https://api.com/products")
+        const data = await res.json()
+
+        return <div>{data.length}</div>
+        }
+
+        Method 3- Revalidation
+        You can cache but refresh after some time. - like ISR
+        fetch("https://api.com/products", {
+            next: { revalidate: 60 }
+        })
+
+
+Q- Explain the three caching strategies in Next.js App Router
+    "Next.js App Router has three caching layers: Request Memoization which deduplicates fetch calls within a single request,
+    Data Cache which stores API responses across requests, and Full Route Cache which caches the rendered page output for 
+    static routes."
+    1. Static Rendering
+    2. Dynamic Rendering
+    3. ISR (Revalidation)
+
+Q- Layout System? What is layout.js?
+    Layouts allow persistent UI across routes.
+    State preserved
+    No Re-render on navigation
+
+Q- What is streaming in Next.js?
+    Streaming allows sending HTML in chunks instead of waiting for full page.
+
+Q- What replaced API routes in App Router?
+    route.js file
+
+Q-  What is Partial Rendering in Next.js?
+
+Q- Explain Server Actions
+    Server actions allow calling server functions from client components.
+
+Q- What happens internally when you navigate between pages in Next.js App Router?
+    Steps:
+    1️⃣ Client sends request for route segment
+    2️⃣ Server renders React Server Component tree
+    3️⃣ Server sends RSC payload
+    4️⃣ Client merges it with existing UI
+    5️⃣ Only changed components update
+
+    This avoids full page reload.
+
+Q- What is the RSC Payload?
+    RSC payload contains:
+        Serialized represetation of server component tree
+          It contains
+            Component structure
+            Fetched Data
+            reference to client component
+
+    Client uses it to reconstruct UI without sending full JS.
+
+Q- Can a Server Component import a Client Component?
+    YES, but opposite now allowed
+
+Q- How does Next.js implement React Server Components internally?
+    Next.js uses React Flight protocol to implement Server Components.
+    "Next.js implements React Server Components using the React Flight protocol. Server components render on the server, and React serializes the component tree into an RSC payload. This payload is streamed to the client along with HTML, and the client reconstructs the UI while hydrating only client components."
+    - Browser Request
+    - Next.js Server - Server renders Server Components
+    - React Server Components render - React creates an RSC Payload()
+    - React Flight Payload (JSON-like format) - React converts the component tree into a React Flight payload.
+    - Client receives payload - Next.js sends two things: 1. HTML 2. RSC PAyload
+    - React reconstructs component tree - Browser downloads the client JS bundle, Server components do not hydrate, Only client components hydrate.
+    Nextjs build two bundles - server and client (Server components never ship JS., that is why Smaller JS bundle)
+
+Q- Why does navigation not reset component state?
+    Because layouts persist between route changes.
+    Sol- Use template.js instead of layout.
+
+Q- layout vs template.js?
+    Layout
+        does not re-render when navigating between child routes
+        State is preserved, DOM is not recreated
+    Template
+        re-mounts on every navigation
+        State is not preserved, effects re-run
+
+Q- How would you reduce bundle size in a large Next.js app?
+    server components
+    dynamic imports
+    remove client components
+    lazy load heavy libraries
+    tree shaking
+
+Q- Layout Behavior
+    app/
+    layout.js
+    dashboard/
+        layout.js
+        page.js
+
+    1️⃣ If a user navigates between: /dashboard/analytics /dashboard/settings
+        In App Router, layouts are persistent across navigation within the same route segment.
+        So Next.js does not re-render the layout. Only the page segment changes.
+        This is called Partial Rendering.
+
+Q- what happens when we click on link tag in nextjs? Explain what happens internally in Next.js App Router.
+    <Link href="/products">Products</Link>
+        Next.js uses client-side navigation through the Next.js Router.
+        It interecept the click, prevent full page reload, and fetches only required route segment
+
+
+Q- Parallel Routes & Intercepting Routes
+
+Q- Server Actions (+ security pitfalls)
+    Server Actions let you run server-side code directly from components — no API route needed.
+    No fetch, no API route, no onSubmit handler. The <form action> directly accepts the server action.
+        1. Server Actions are public HTTP endpoints
+            Every server action compiles down to a POST endpoint. Anyone can call it directly — not just your UI.
+        2.  Don't expose sensitive data in return values
+    
+Q- 4 caching layer
+    - Request Memoization - Deduplicates identical fetch() calls within a single render pass.
+    - Data Cache - fetch request cached by default
+    - Full Route Cache - Caches the full rendered HTML + RSC payload of statically generated routes at build time.
+        Below statemenet makes full route cache disable (What makes a route dynamic (opts out of Full Route Cache))
+        export const dynamic = "force-dynamic";
+        export const revalidate = 0;
+        cookies, headers, searchParams
+    - Router cache
+        Client-side in-memory cache of RSC payloads for routes the user has visited (Browser)
+            Below statemenet makes opt out
+            router.refresh()
+            revalidatePath()

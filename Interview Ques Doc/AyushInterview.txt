@@ -352,6 +352,8 @@ altimetrik Second round - 26th feb
 
 -----------------------------------------------------------------------------
 
+xebia - (27th feb)
+
 - Given an array of words arr[], the task is to groups strings that are anagrams. An anagram is a word or phrase formed by rearranging the letters of another, using all the original letters exactly once.
  
     Input: arr[] = ["act", "god", "cat", "dog", "tac"]
@@ -444,7 +446,7 @@ output of both
 
 -----------------------------------------------------------------------------
 
-Tata digital 1st round
+Tata digital 1st round (2nd march)
 
 - where is caching applicable? redis on client side not possible? where is redis?
 - two api call = one to cms and then magento - going to origin server ?
@@ -464,7 +466,7 @@ Tata digital 1st round
 
 -----------------------------------------------------------------------------
 
-Max IQ  1st round
+Max IQ  1st round (2nd march)
 
 - flatten array using depth
 - Output
@@ -558,19 +560,77 @@ button onclick - memo and useCallback
         );
     }
 
-- 
+------------------------------------------------------------------------------
 
------------------------------------------------------------------------------
+Quarks First round (3rd March)
+    - https://codesandbox.io/p/sandbox/hidden-snowflake-fgdnmp
+    - debounce and fetch fun
 
 ------------------------------------------------------------------------------
 
+Tata Digital second round (5th march)
 
+    - Global toast based notification which support all type like success, warning, error messages
+    - Can have multple notification and they should be stacked upon.
+    - can trigger from anywhere in the application like any child, interceptor, etc.
+    - how you are going to trigger it? like using redux middleware, etc.
 
+------------------------------------------------------------------------------
 
+Perforce 1st round interview (6th march)
+    - how did you scale and high perform achieve?
+        Not mention state manage library or stuff because it is incorporated, how did you scale?
+    - filter polyfill ( why use .call?, what would happen if we not use this?, what are errors here)?
+    - ai tolls that you used as a frontend
 
+------------------------------------------------------------------------------
 
+GSPANN 1st round interview(6th march)
+    - which one to choose when React or NextJS
+    - benefit of server components?
+    - is getServerSideProp is same as Server component? why do we need server comp? what is Difference
+    - Core Web Vital explain? Explain main 4 attribute root cause and fixes
+    - Counter in react with max and min input field that adjust according to Counter
+    - What to use flexbox and grid when? difference and use case
+    - types of position in CSS can you can mention properties of it.
+    - Tailwind css vs bootstrap
+    - Island architecture
+    - Next server component
 
+------------------------------------------------------------------------------
 
+Dimaag.AI 1st round interview(6th march)
+    - Cause of memory leak, how it happens?
+    - maximum call stack reached? why this error came? and how to resolve it
+    - Let's start with the one scenario is, since you are a lead front-end here, okay, you have given a Figma design. Today I have been asked you to develop the front-end architecture, okay? Knowing current open-source technologies or packages or whatever we have in a front-end, whatever the NPM packages which are suitable for the front-end or React or Next.js, any framework in the front-end. So I want to have a full, I want to know the full talk about it, like start from an HTML tag and closing till an HTML tag. That means a full architecture, how will you plan to set up the architecture? Like considering all these things, like styling, how will you have your services for the integration? How will you be declaring your methods, different methods for post, get, put, all these methods? How will be your component structure and what are the packages we'll use? Okay, how will you maintain a config file, like a feature flag kind of thing? So I'm not sure I'm giving you more answers, right?
+    - Let's start with the one scenario is, since you are a lead front-end here, okay, you have given a Figma design. Today I have been asked you to develop the front-end architecture, okay? Knowing current open-source technologies or packages or whatever we have in a front-end, whatever the NPM packages which are suitable for the front-end or React or Next.js, any framework in the front-end. So I want to have a full, I want to know the full talk about it, like start from an HTML tag and closing till an HTML tag. That means a full architecture, how will you plan to set up the architecture? Like considering all these things, like styling, how will you have your services for the integration? How will you be declaring your methods, different methods for post, get, put, all these methods? How will be your component structure and what are the packages we'll use? Okay, how will you maintain a config file, like a feature flag kind of thing? So I'm not sure I'm giving you more answers, right?
+    - Event driven architecture?
+    - Memory heap?
+    - How garbage collector clears variable
+    - As any field setup react with NPX or with Vite or anything like that, there are some in open config.ts or js, you'll see some Babel transformers up there. So why do we need these Babel transformers?
+
+------------------------------------------------------------------------------
+
+MAX IQ 2nd round interview (ARWA)(6th march)
+    - VS Code Structure code with onclick hide and show folder
+    - const [open, setOpen] = useState(false);
+        const handleClick = () => { setOpen(!open) }
+
+        What is the difference of setting state in useState, one with callback and another one is directly.
+    - High level of flow and idea of redux
+    - Flux pattern/architecture
+    - what is virtualization and what problem it solved?
+    - any other way we can implement the same thing in javascript
+    - What is ShadowDom
+    - When react preserve the state and when it reset the state on re-render
+    - what is react query and why it is used? what problem it solved
+    - and what about SWR
+    - Downside of using React
+    - What is memory leak?
+    - Do you think memory leaks are different from a non-React application? Let's say we have a plain JavaScript application and we have a same application built in React. So, is there any difference between memory leaks of these two applications if we implement the same scenario, or there can be different pitfalls based on the framework like React?
+    - what is garbage collector
+
+------------------------------------------------------------------------------
 
 
 
