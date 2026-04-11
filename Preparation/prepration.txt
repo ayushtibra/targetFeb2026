@@ -197,7 +197,7 @@ Q- lifecycle in class
 
 Q- frontend architecture for a large scale 
     - Performance
-        LCP, CLS, FCP, TTFB, 
+        LCP, CLS, FCP, TTFB
     - Scalability
         CDN, Caching, Redis(rate limiting), Tan-Stack Query (client side cache)
     - Maintainablity
@@ -531,6 +531,102 @@ Q- 4 caching layer
         cookies, headers, searchParams
     - Router cache
         Client-side in-memory cache of RSC payloads for routes the user has visited (Browser)
-            Below statemenet makes opt out
+            Below statemenet makes opt out  
             router.refresh()
             revalidatePath()
+    
+Q- Middleware-based auth
+    Middleware runs before a request hits your route — making it the right place to enforce auth at the edge, before any page or API logic executes.
+
+Q- What is the RSC payload? how navigation works?
+    When a Server Component renders, it doesn't produce raw HTML. It produces a serialized description of the 
+    component tree — a JSON-like format Next.js calls the RSC payload.
+    It contains:-
+        The rendered output of every Server Component (fully resolved)
+        Placeholders for Client Components (with their props, but not their logic — that's in the JS bundle)
+        No Server Component code ships to the client — only its output
+
+    Navigation
+        Initial page load (hard navigation)
+            On first visit, Next.js sends both HTML and the RSC payload:
+            The HTML is for the initial paint — fast, SEO-friendly. The RSC payload is for hydration — React uses it to reconcile
+            the server tree with the client without re-rendering Server Components.
+        Soft navigation (clicking a <Link>)
+            This is where RSC payload becomes the primary mechanism — no full HTML is generated:
+            React surgically updates only the changed segments — shared layouts stay mounted, state is preserved, 
+            no full re-render.
+
+Q- make me understand how it works for react CSR, nextjs pages router SSR, SSG, CSR and app router server comp, client comp and what happens in navigation in all of three cases
+    React CSR   
+        Browser request, server send instant blank html, browser make request for JS bundle , then fetch calls and then render UI
+        Everything lives in the bundle. Navigation is instant but initial load is slow.
+
+    NextJS SSR
+        browser request, server runs getServerSideProp, render nd return full html and js bundle, hydrate, react take over
+    NextJS SSG
+        browser request, server return pre built html and js bundle, hydrate, react take over
+    
+    Key difference from App Router: 
+    the **entire page component re-mounts** on navigation. Shared state had to live in `_app.js`.
+
+    NextJS App router
+        browser request, server render server comp, return html and rsc payload, client bundle hydrate only
+        Navigation
+            Router Cache hit?
+            └── YES → apply cached RSC payload instantly, done
+            └── NO  ↓
+
+            |---fetch /dashboard------>|  (RSC request, not HTML)
+            |<---RSC payload only------|  (just the changed segments)
+            |
+            └── React patches only changed segments into existing tree
+            └── Shared layouts stay mounted
+            └── Client Component state preserved
+
+                                Initial Load                    Navigation
+                            
+            React CSR         blank → JS → fetch → render     instant (all local)
+                            
+            Pages SSR         wait → full HTML → hydrate       full page remount
+                                                            (fetches page JSON)
+                            
+            Pages SSG         instant HTML → hydrate           full page remount
+                                                            (fetches page JSON)
+                            
+            App Router SC     wait → full HTML → hydrate       RSC payload only
+            + Suspense        skeleton → stream → hydrate      (only changed segments)
+                            
+            App Router CC     HTML shell → JS → hydrate        RSC payload only
+                            (like SSR but less JS shipped)   (state preserved)
+            ```
+
+            ---
+
+            ## The core progression
+            ```
+            CSR          — server does nothing, client does everything
+            Pages SSR    — server renders full HTML, client re-renders everything on nav
+            Pages SSG    — server pre-renders at build, client re-renders on nav
+            App Router   — server renders once per segment, client patches surgically
+
+
+Q- Image optimization internals
+    “Next.js image optimization works through the /_next/image API route. When the <Image> component is used, Next.js generates a request with parameters for width and quality. The server fetches the original image, processes it using Sharp to resize and compress it, converts it to modern formats like WebP or AVIF based on the browser’s Accept header, and caches the optimized image for future requests.”
+    - nextjs by using next/image do 
+        - resizing
+        - Compression
+        - format conversion
+        - automatically generated multiple sizes ans serce according to srcset
+    - it also cached on CDN if present like on vercel, server disk cache(.next)
+    - lazy load by default
+
+Q- Edge Runtime vs Node.js Runtime trade-offs
+    
+Q- Partial Rendering   
+    dashboard
+        layout
+        analytics
+        settings
+    user navigate from analytics to settings -> only setting will re-render and layout and analytics persist, this is Partial rendering
+
+Q- 

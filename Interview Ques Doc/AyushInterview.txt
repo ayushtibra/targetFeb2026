@@ -632,11 +632,40 @@ MAX IQ 2nd round interview (ARWA)(6th march)
 
 ------------------------------------------------------------------------------
 
+var Temp1 =[{FirstName:"Vivek", Id:1},{FirstName:"Vinay", Id:2}]
+ var Temp2 =[{LastName:"A", Id:2},{LastName:"D", Id:1}];
+ //Expected Output = [{FirstName:’Vivek’, LastName:’D’, Id:1},{FirstName:’Vinay’, LastName:’A’, Id:2}]; 
 
 
+console.log('1');
+setTimeout(() =>console.log('2'), 0);
+Promise.resolve().then(() =>console.log('3'));
+requestAnimationFrame(() =>console.log('4'));
+console.log('5');
 
-
-
+Q: You have a dashboard that shows real-time stock prices and a static "About Us" page. Which rendering strategy (SSR, SSG, ISR, or CSR) would you use for each, and why?
+ 
+Q: In the App Router, what is the difference between a Layout and a Template?
+ 
+Q: How would you implement a "Like" button that feels instant, even if the server is slow?
+ 
+Q: How do you implement Role-Based Access Control (RBAC) in a Next.js app?
+ 
+Write a function once(fn) that ensures a given function can only be called exactly once. Subsequent calls should return the value from the first invocation.
+ 
+once(fn);
+once(fn);
+ 
+How do you create an object that inherits from another without using the class keyword?
+ 
+You have a dashboard page that needs to fetch UserPortfolio, MarketNews, and UserPreferences. Currently, you are awaiting them one by one in a Server Component. What is the performance issue here, and how do you fix it?
+ 
+When using Server Actions, how do you handle form validation and display errors to the user?
+ 
+Accessibility
+vanilla js
+bowser Repaint
+core web vitals
 
 
 
